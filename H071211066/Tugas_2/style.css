@@ -1,0 +1,109 @@
+* {
+    margin:0; 
+    padding:0;
+}
+
+nav {
+   width: 100%;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 20px;
+} 
+
+nav ul {
+   background:#fa6d98  ;
+   list-style: none;
+   width: 100%;
+   margin-bottom : 0 !important;
+}
+
+nav ul li:hover{
+   background: #07b1bc;
+}
+
+nav ul li:hover a{
+    color:#000;
+}
+a {
+    text-decoration: none !important;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul.menu span {
+    display: flex;
+}
+nav ul li .brand {
+    flex : 1;
+}
+nav ul li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.jumbotron {
+    object-fit: cover;
+    background-image: url('pink.jpg');
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+  }
+/* .jumbotron {
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background-image: url('pink.jpg');
+} */
+section p.prgf {
+    /* -webkit-column-count: 2;
+    -moz-column-count: 2;  */
+    column-count: 2;
+    padding: 20px 60px 20px 60px;
+    text-align: justify;
+}
+h3 {
+    text-align: center;
+    color: #07b1bc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px 0;
+}
+section.galery div.container {
+    width: 100%;
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-wrap: wrap;
+    border-radius: 1;
+    flex : 3;
+
+    /* width: 800px;
+           height: 250px; */
+}
+/* section.galery div.container div.box {
+    flex: 3;
+} */
+section.galery div.container div.box img {
+    width: 100%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    /* margin : 0 !important;
+    flex: 3; */
+}
+h4 {
+    text-align: center;
+    color: #07b1bc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px 0;
+}
+section.judul ul li {
+   display: inline-table;
+   width: 100%;
+}
+section.galery div.container div.box h1 {
+    font-size: 20px;
+}
