@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* animasi */
+@keyframes splash{
+    0%{
+        
+        
+       height: 120%;
+    }
+
+
+
+    100%{
+      
+        
+        height: 0;
+        z-index: -1;
+        
+      
+    }}
+    @keyframes logo{
+        0%{
+            
+            
+           
+        }
+    
+    50%{
+        filter: hue-rotate(50deg);
+    }
+    
+        100%{
+          
+            
+            filter: hue-rotate(200deg);
+            
+          
+        }}
+    @keyframes sharingan2{
+        0%{
+            
+            transform: scale(0.1);
+           
+        }
+    
+    
+    
+        50%{
+            transform: scale(2) rotate(360deg);
+           
+            opacity: 1;
+            
+          
+        }
+        100%{
+            transform: scale(1) rotate(-180deg);
+            opacity: 0;
+            z-index: -1;
+          
+            
+            
+          
+        }
+    }
+/* splashscreen */
+.navbar .lol{
+    opacity: 0;
+}
+.navbar input{
+    opacity: 0;
+}
+div.splash{
+    margin-top: -100px;
+    display: flex;
+    position: fixed;
+    z-index: 100000000;
+    height: 120%;
+    width: 100%;
+    background-color: #000000;
+    animation: splash 2s  ease 1 alternate forwards;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    animation-delay: 4s;
+}
+div.splash img{
+   width: 300px;
+   display: flex;
+
+  animation: sharingan2 5s  ease 1 alternate forwards;
+ 
+   
+}
+/* stelan awal */
+
+*{
+    margin: 0 0;
+    padding: 0 0;
+    color: rgb(255, 255, 255);
+    
+
+}
+html{
+    background-color: rgb(0, 0, 0);
+}
+
+/* mulai */
+/* navbar */
+div.navbar{
+    background-color: black;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    margin-top: -30px;
+    justify-content: right;
+    align-items: flex-end;
+    z-index: 100;
+   
+    
+    
+}
+.navbar img{
+    width: 7%;
+    padding-right:39%;
+    margin-bottom: -10px;
+    animation: logo 3s  ease infinite alternate forwards;
+
+}
+div.navbar ul{
+    display: flex;
+    margin-right:35%;
+
+}
+div.navbar ul li{
+    display: flex;
+    margin-right: 5%;
+    
+
+}
+div.navbar ul li a{
+    margin-left: 50px;
+    display: flex;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+/* 1 jam */
+div.navbar ul li:first-child::before{
+    display: flex;
+    margin-top: 25px;
+    background-color:#66FCF1;
+    content: " ";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    margin-left: 50px;
+    transform: scaleX(0);
+    transition: 1s;
+  
+
+}
+div.navbar ul li:first-child:hover::before{
+
+    transform: scaleX(1);
+  
+
+}
+div.navbar ul li:last-child:before{
+    display: flex;
+    margin-top: 25px;
+    background-color:#66FCF1;
+    content: " ";
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    position: absolute;
+    margin-left: 50px;
+   
+    transition: 1s;
+  
+
+}
+div.navbar ul li:last-child:hover::before{
+
+    width: 59px;
+   
+
+}
+
+
+/* //batas/////////////// */
+div.kontener{
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 1024px;
+    background-image: url(../images/tangan.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: logo 2s  ease infinite alternate forwards;
+   
+}
+.kontener h1{
+    font-size: 5vmax;
+    font-family: 'Poppins', sans-serif;
+    line-height: 96px;
+    margin-left: 13%;
+    margin-top: 35px;
+
+ 
+}
+.kontener h5{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 34px;
+    margin-left: 10%;
+    padding-top: 180px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #66FCF1;
+    margin-left: 13%;
+}
+
+/* tombol_setengah_jam_ */
+.kontener a{
+    display: flex;
+    border: solid 1px #66FCF1 ;
+    width: 217px;
+    height: 48px;
+   
+    font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+margin-left: 13%;
+margin-top: 47px;
+justify-content: l;
+align-items: center;
+font-size: 16px;
+font-family: 'Poppins', sans-serif;
+line-height: 34px;
+text-decoration: none;
+font-weight: 500;
+transition: 1s;
+    padding-left: 70px;
+    box-sizing: border-box;
+  
+}
+
+
+
+.kontener a::before{
+    position: absolute;
+    content: " ";
+    width: 0px;
+    height: 48px;
+    transition: 1s;
+    margin-left: -70px;
+    opacity: 1;
+}
+
+
+.kontener a:hover{
+    color: black;   
+    position:absolute;
+    z-index: 100;
+} 
+
+.kontener a:hover::before{
+    background-color: #66FCF1;
+    color: black;   
+    position:absolute;
+    width: 217px;
+    height: 48px;
+    z-index: -1;
+    opacity: 1;
+} 
+
+
+
+/* kontener2 */
+
+
+/* text 20m3nit*/
+.text090{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -150px;
+    margin-bottom: 60px;
+    
+}
+.text090 h1{
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 75px;
+    color: #FFFFFF;
+    width: 90%;
+    align-items: center;
+    margin-left: 13%;
+
+}
+.text090 h1::before{
+    content: " ";
+    width: 62px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #66FCF1;
+    display: flex;
+    margin-right: 10px;
+    
+}
+.text090 h5{
+    display: flex;
+    margin-left: 13%;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 26px;
+text-transform: uppercase;
+color: #66FCF1;
+}
+.garis{
+    display: flex;
+    width: 82px;
+    height: 5px;
+    background: #66FCF1;
+}
+
+
+/* .kontener2 */
+div.kontener2{
+    display: flex;
+
+    margin-bottom: 0;
+    width: 100%;
+    height: 680px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    box-sizing: border-box;
+    
+ 
+}
+.kontener2 div{
+  display: flex;
+max-width: 557.5px;
+height: 323px;
+margin:5px 5px ;
+background: #121212;
+flex-wrap: wrap;
+box-sizing: border-box;
+padding:0 5%;
+transition: 1s;
+
+
+}
+
+div.kontener2 h3{
+    display: flex;
+    width: 100%;
+
+    align-items: flex-end;
+    justify-content: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    
+}
+div.kontener2 p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    height:50% ;
+    margin-top: 20px;
+    
+ 
+}
+div.kontener2 div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* text hover */
+.kontener2 div::after{  
+    position: absolute; 
+    display: flex;
+    content: " ";
+    background-color:#66FCF1 ;
+    width: 560px;
+    height: 16px;
+    transition: 1s;
+}
+.kontener2 div:hover{
+    background-color: #66FCF1;
+    color:#121212;
+}
+.kontener2 div:hover p{
+    
+   
+    color:#121212;
+}
+.kontener2 div:hover h3{
+    
+    color:#121212;
+}
+.kontener2 div:hover::after{
+    background-color: #ffffff;
+    color:#121212;
+}
+.kontener2 div:hover img{
+    filter: brightness(0%);
+
+}
+
+.kontener2 div img{
+    width: 130px;
+    margin-right: 360px;
+}
+/* 
+kontener3 */
+.text091{
+    display: flex;
+    flex-wrap: wrap;
+   margin-top: 200px;
+    margin-bottom: 60px;
+    height: 120px;
+    
+}
+.text091 h1{
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    color: #FFFFFF;
+    width: 90%;
+    align-items: center;
+    margin-left: 13%;
+
+}
+.text091 h1::before{
+    content: " ";
+    width: 62px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #66FCF1;
+    display: flex;
+    margin-right: 10px;
+    
+}
+.text091 h5{
+    display: flex;
+    margin-left: 13%;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 26px;
+text-transform: uppercase;
+color: #66FCF1;
+}
+
+
+div.kontener3{
+    display: flex;
+
+    
+    width: 100%;
+    height: 680px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    box-sizing: border-box;
+    margin-top: 40px;
+    padding-bottom: 100px;
+    padding: 0 100px;
+    
+}
+.kontener3 div{
+  display: flex;
+  width: 370px;
+  height: 309px;
+margin:5px 5px ;
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;
+flex-wrap: wrap;
+box-sizing: border-box;
+padding:0 5%;
+transition: 1s;
+
+
+}
+
+.kontener3 .img{
+    background-image: url(../images/Kisame.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.kontener3 .img1{
+    background-image: url(../images/minato.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.kontener3 .img2{
+    background-image: url(../images/madara.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.kontener3 .img3{
+    background-image: url(../images/pain.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.kontener3 .img4{
+    background-image: url(../images/hasirama.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.kontener3 .img5{
+    background-image: url(../images/sasori.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kontener3 div{
+    justify-content: center;    
+    padding-right: 10px;
+}
+.kontener3 div h4{
+    font-size: 25px;
+    display: flex;
+    margin-top: 120px;
+    align-items: flex-end;
+    margin-left: -205px;
+    opacity: 0;
+  
+}
+.kontener3 div p{
+    font-size: 15px;
+    opacity: 0;
+}
+.kontener3 div:hover{
+    opacity:0.5;
+    background-size: 120%;
+}
+.kontener3 div:hover h4{
+    opacity:2;
+    
+   
+    
+    
+}
+.kontener3 div:hover p{
+    opacity:2;
+    
+    
+}
+footer{
+    width: 100%;
+    height: 130px;
+    background-color: black;
+    border-top: 1px rgba(255, 255, 255, 0.091) solid;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight:lighter;
+    
+}
+footer div{
+    box-sizing: border-box;
+    padding-left: 20%;
+    width: 100%;
+    display: flex;
+    margin-left: -14%;
+    flex-wrap: wrap;
+}
+footer div h6{
+    margin-right: 6%;
+    margin-top: 30px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: lighter;
+   
+}
+footer div p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: lighter;
+    width: 50%;
+    
+}
+footer div div.logo23{
+    width: 50%;
+    justify-content: flex-end;
+}
+footer div img{
+     width: 30px;
+     height: 30px;
+     margin-right: 10px;
+     filter: brightness(300%) saturate(0);
+     
+
+}
+/* responsif tablet */
+@media screen and (max-width:1350px) {
+   
+    div.kontener2 {
+        height:1300px ;
+    }
+   div.kontener3{
+    
+    height: 980px;
+   }
+   footer{
+    height: 200px;
+   }
+}
+
+@media screen and (max-width:1000px) {
+    div.kontener3{
+        height: 1980px;
+       }
+       footer{
+        height: 200px;
+       }
+    
+}
+/* responsif hp */
+@media screen and (max-width:560px) {
+    div.kontener3{
+        height: 1980px;
+       }
+       footer{
+        height: 200px;
+       }
+    
+    div.kontener h5{
+        font-size: 13px;
+        
+    }
+    div.navbar {
+        
+        margin-left: 18px;
+        align-items: flex-start;
+        
+        
+    }
+    div.navbar ul {
+        justify-content: center;
+    
+     
+        
+    }
+    div.navbar ul li {
+        margin-top: 8px;
+      
+    }
+    div.navbar ul li a {
+        font-size: 11px;
+    }
+    div.navbar ul li:last-child:hover::before{
+
+        width: 32px;
+    }
+    div.navbar ul li:first-child::before{
+         width: 32px;
+        
+    }
+
+    .kontener a.dua{
+        margin-left: 50px;
+    } 
+  
+    div.text091 h1::before{
+        display: none;
+    }
+    div.text090 h1::before{
+        display: none;
+    }
+    div.text090 h1{
+        font-size: 28px;
+        margin-left:10px;
+    }
+    div.text091 h1{
+        font-size: 28px;
+        margin-left:10px;
+    }
+    div.text090 h5{
+        font-size:12px;
+        margin-left:10px;
+    }
+    div.text091 h5{
+        font-size:12px;
+        margin-left:10px;
+    }
+    div.kontener2 {
+        height:1700px ;
+    }
+
+    div.kontener2 div {
+        width:300px;
+        height: 400px;
+    }
+    div.kontener2 div::after{
+        width:300px;
+        
+    }
+    .text091{
+        margin-bottom: 100px;
+    }
+    div.kontener2 div img {
+        margin-right: 10px;
+    }
+    div.kontener2 p{
+        font-size: 10px;
+    }
+    div.kontener3 p{
+        font-size: 10px;
+    }
+   
+}
+@media screen and (max-width:450px) {
+   body .navbar{
+        
+        margin:0 0;
+        height: 20px;
+        padding:5px;
+        margin-top: -30px;
+        justify-content: center;
+        width: 100vw;
+
+    }
+
+
+
+
+
+
+
+
+
+/* animasi atas kebawah? 45 m3nit */
+   body .navbar ul{
+    
+    margin: 0 0;
+    padding: 0 0;
+    margin-right: 50px;
+    opacity: 0;
+   
+   
+   }
+   body .navbar div.lol h4{
+    display: flex;
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    border-bottom: 1px #66fcf271 solid ;
+    height: 50px;
+    margin-top: -13px;
+    justify-content: center;
+    align-items: center;
+    z-index: 900000000000000;
+    margin-left: -30px;
+   }
+   body .navbar div.lol ul{
+     display: flex;
+     flex-wrap: wrap;
+     opacity: 0;
+     transition: 1s;
+     align-items: flex-start;
+     justify-content: center;
+
+   }
+   body .navbar div.lol ul li {
+    display: flex;
+    width: 100%;
+    padding-left: 0%;
+    margin-top: 10px;
+    animation-delay: 2s;
+   
+   }
+   body .navbar div.lol ul li a{
+    display: flex;
+    width: 100%;
+    margin:auto;
+   }
+body .navbar div.lol ul:last-child{
+    margin: 0 20px;
+}
+   body .navbar div.lol ul:first-child{
+    display: flex;
+    width: 100%;
+    padding-left: 30%;
+    margin-top: -10px;}
+
+    div.navbar ul li:first-child:before{
+
+        width: 100vmax;
+        transform: scale(0);
+    }
+
+    div.navbar ul li:last-child:before{
+       transition: 1s;
+        width: 100vmax;
+        transform: scale(0);
+        
+       
+    }
+   
+   div.navbar ul li:hover::before{
+
+    transform: scaleX(100);
+    margin-left: -400px;
+   
+
+}
+
+   
+   body .navbar div.lol{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+   padding-top: 10px;
+   padding-bottom: 20px;
+    
+    text-align: center;
+    justify-content: center;
+    background-color: #000000;
+    border-bottom: 1px #66fcf271 solid ;
+    z-index: 1000;
+    width:100vmax;
+    height: 40px;
+    margin-right: -250PX;
+    cursor: pointer;
+    margin-top: -5px;
+    transition: 1s;
+    margin-left: -9px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    opacity: 1;
+
+    
+
+   }
+  body .navbar input{
+    position: absolute;
+    z-index: 1000000;
+   height: 500px;
+   width: 500px;
+   margin-top: -460px;
+   opacity: 0;
+   cursor: pointer;
+   display: flex;
+  }
+
+  .navbar input:checked ~ div.lol{
+   height: 200px;
+  }
+  .navbar input:checked ~ div.lol ul{
+   opacity: 1;
+   margin-top: 0;
+   }
+  
+  
+    .navbar img{
+        display: none;
+    }
+    div.kontener3{
+        margin-top: -180px;
+        padding: 0 0;
+        margin-top: 5px;
+        
+        
+    }
+    div.kontener3 div{
+        width: 100%;
+    }
+}
+
+/* tamat ); */
