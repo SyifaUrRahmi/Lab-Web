@@ -105,6 +105,10 @@ html{
     background-color: rgb(0, 0, 0);
 }
 
+.navbar img{
+    width: 6vmax;
+    margin-right: 25%;
+}
 /* mulai */
 /* navbar */
 div.navbar{
@@ -115,19 +119,13 @@ div.navbar{
     height: 50px;
     margin-top: -30px;
     justify-content: right;
-    align-items: flex-end;
+    align-items: center;
     z-index: 100;
    
     
     
 }
-.navbar img{
-    width: 7%;
-    padding-right:39%;
-    margin-bottom: -10px;
-    animation: logo 3s  ease infinite alternate forwards;
 
-}
 div.navbar ul{
     display: flex;
     margin-right:35%;
@@ -629,7 +627,10 @@ footer div img{
 }
 /* responsif tablet */
 @media screen and (max-width:1350px) {
-   
+    .navbar img{
+        width: 6vmax;
+        margin-right: 10%;
+    }
     div.kontener2 {
         height:1300px ;
     }
@@ -643,6 +644,10 @@ footer div img{
 }
 
 @media screen and (max-width:1000px) {
+    .navbar img{
+        width: 6vmax;
+        margin-right:6vmax;
+    }
     div.kontener3{
         height: 1980px;
        }
@@ -651,8 +656,20 @@ footer div img{
        }
     
 }
+@media screen and (max-width:700px) {
+    .navbar img{
+        width: 6vmax;
+        margin-right:-20%;
+    }
+
+}
 /* responsif hp */
 @media screen and (max-width:560px) {
+    .navbar img{
+        width: 6vmax;
+        margin-right:-20%;
+    }
+
     div.kontener3{
         height: 1980px;
        }
@@ -667,7 +684,7 @@ footer div img{
     div.navbar {
         
         margin-left: 18px;
-        align-items: flex-start;
+        align-items: center;
         
         
     }
@@ -746,6 +763,13 @@ footer div img{
    
 }
 @media screen and (max-width:450px) {
+    .navbar img{
+        width: 6vmax;
+       margin-right: 80%;
+        position: absolute;
+        z-index: 20000000000000000;
+        margin-top: 2%;
+    }
    body .navbar{
         
         margin:0 0;
@@ -886,9 +910,7 @@ body .navbar div.lol ul:last-child{
    }
   
   
-    .navbar img{
-        display: none;
-    }
+   
     div.kontener3{
         margin-top: -180px;
         padding: 0 0;
