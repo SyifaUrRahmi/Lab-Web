@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Tugas Praktikum"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Tugas Praktikum 1"
+	}
+}
