@@ -2,4 +2,4 @@
 
 Tempat Kumpul Link Deploy
 
-https://kalongtour.vercel.app/
+<a href="https://kalongtour.vercel.app/">Tugas 3</a>
