@@ -8,6 +8,7 @@ body {
 	font-family: Winkle;
 	src: url(/assets/font/Winkle-Regular.ttf);
 }
+
 .Logo {
 	font-family: Winkle;
 }
@@ -20,6 +21,11 @@ h2 {
 	font-family: Winkle;
 	font-size: 60px;
 	padding-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
 }
 
 .copyright {
