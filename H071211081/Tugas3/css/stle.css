@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+/* splash screen   */
+@keyframes splash {
+	0% {
+		height: 120%;
+	}
+
+	100% {
+		height: 0;
+		z-index: -1;
+	}
+}
+@keyframes hallo {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes spin {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes spinover {
+	0% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+div.splash1 {
+	color: white;
+	margin-top: -100px;
+	display: flex;
+	position: fixed;
+	z-index: 100000000;
+	height: 120%;
+	width: 100%;
+	background-color: #000000;
+	animation: splash 2s ease 1 alternate forwards;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	animation-delay: 3s;
+}
+
+.splash1 ul {
+	display: flex;
+	list-style: none;
+	color: #fff;
+	font-size: 5vmax;
+	font-weight: bold;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* spin */
+.spin .btn1 {
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+.spin {
+	margin-top: 13vmax;
+	color: white;
+	animation: spin 0.2s ease infinite alternate forwards;
+	animation: spinover 3s ease 1 alternate forwards;
+}
+
+/* spin */
+.splash1 ul li {
+	position: absolute;
+	opacity: 0;
+	text-transform: uppercase;
+}
+div.splash1 ul li:nth-child(1) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 0.25s;
+}
+div.splash1 ul li:nth-child(2) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 0.5s;
+}
+div.splash1 ul li:nth-child(3) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 0.75s;
+}
+div.splash1 ul li:nth-child(4) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 1s;
+}
+div.splash1 ul li:nth-child(5) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 1.25s;
+}
+div.splash1 ul li:nth-child(6) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 1.5s;
+}
+div.splash1 ul li:nth-child(7) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 1.75s;
+}
+div.splash1 ul li:nth-child(8) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 2s;
+}
+div.splash1 ul li:nth-child(9) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 2.25s;
+}
+div.splash1 ul li:nth-child(10) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 2.5s;
+}
+div.splash1 ul li:nth-child(11) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 2.75s;
+}
+div.splash1 ul li:nth-child(12) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 3s;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: #ffd42d;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+@keyframes color {
+	from {
+		filter: hue-rotate(0);
+	}
+	to {
+		filter: hue-rotate(270deg);
+	}
+}
+.navbar {
+	font-size: 12px;
+	padding: 0;
+	font-family: "IM Fell English", serif;
+	font-weight: 400;
+}
+.navbar a:hover {
+	font-weight: bold;
+	color: black;
+}
+
+.main {
+	background-color: #ffd42d;
+}
+
+* {
+	transition: 2s;
+}
+/* //jumbotron */
+.main img {
+	margin-top: -5%;
+	width: 100%;
+	transition: 2s;
+}
+/* text slide 1 */
+.home {
+	padding-top: 5%;
+	font-family: "IM Fell English", serif;
+}
+.home h1 {
+	font-size: 6vmax;
+	width: 0px;
+	transition: 1s;
+	color: white;
+	font-weight: bold;
+	transition: 2s;
+	margin-top: 5%;
+	background-color: rgb(47, 47, 47);
+}
+.home p {
+	font-size: 1em;
+	opacity: 0;
+	color: black;
+}
+/* efek paralax */
+
+/* text slide 1 */
+
+.main .h11 .container.hover {
+	padding-top: 20%;
+}
+
+.main .h12 .container.hover {
+	padding-top: 20%;
+}
+
+/* animasi jumbotron untuk slide1 */
+/* animasi gambar */
+.main .container.hover:hover .home2 img {
+	margin-left: 20%;
+	cursor: pointer;
+}
+.main .container.hover:hover .home2 img {
+}
+/* animasi text slide 1 dan 2 karena sama animasinya sensei*/
+
+.main .container.hover:hover h1 {
+	width: 120%;
+	color: #ffd42d;
+}
+.main .container.hover:hover p {
+	opacity: 1;
+}
+/* untuk slide 2 */
+.main .container.hover:hover .home22 img {
+	margin-left: -20%;
+	cursor: pointer;
+}
+
+/* bagian deskripsi */
+
+.deskripsi h1 {
+	color: white;
+	font-size: 3em;
+	font-family: "IM Fell English", serif;
+	font-weight: 500;
+}
+
+.text1atas h2 {
+	font-size: 4em;
+	line-height: 70px;
+	font-weight: bold;
+}
+
+.deskripsi p {
+	font-size: 19, 3px;
+	font-family: "Libre Baskerville", serif;
+	font-style: italic;
+	text-align: justify;
+}
+.deskripsi {
+	background-color: #ffd42d;
+}
+
+/* bagian badge */
+.badge {
+	width: 100%;
+	background-color: #fff;
+}
+
+.badge h1 {
+	color: black;
+}
+.badge .skill h1 {
+	color: black;
+}
+.badge img {
+	width: 17vmax;
+}
+
+.badge .apaan {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+/* gambar apaan tuh */
+.apaan img {
+	width: 150%;
+	margin-left: -20px;
+}
+.apaan h1 {
+	font-size: 3vmax;
+	font-family: "Libre Baskerville", serif;
+	color: black;
+	font-weight: bold;
+}
+
+.img1,
+.img2,
+.img3 {
+	cursor: pointer;
+}
+/* animasi untuk warna */
+.badge img {
+	animation: color 2s ease-in-out infinite forwards;
+}
+/* pessudoo class h1 buat pop up */
+.badge .skill1 .img1::after {
+	display: flex;
+	content: " ";
+	width: 15%;
+	height: 230px;
+	transform: scaley(0);
+	position: absolute;
+	background-image: url(../Aset/images/web.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	margin-top: -20vmax;
+	transition: 0.4s;
+}
+
+.badge .skill2 .img2::after {
+	transition: 0.4s;
+	transform: rotatey(90deg);
+	display: flex;
+	color: #fff;
+	content: " ";
+	width: 15%;
+	height: 250px;
+	position: absolute;
+	margin-top: -20vmax;
+	background-image: url(../Aset/images/database.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+.badge .skill3 .img3::after {
+	transition: 0.4s;
+	margin-top: -20vmax;
+	display: flex;
+	content: " ";
+	width: 15%;
+	height: 250px;
+	position: absolute;
+	background-image: url(../Aset/images/notif.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	margin-left: 3vmax;
+
+	transform: scaley(0);
+}
+/* animasi pop up pessudo class img */
+.badge .skill1 .img1:hover::after {
+	transform: scaley(1);
+}
+.badge .skill2 .img2:hover::after {
+	transform: rotatey(0deg);
+}
+.badge .skill3 .img3:hover::after {
+	transform: scaley(1);
+}
+/* 
+untuk badge warna bacground */
+.badgey {
+	background-color: #ffd42d;
+}
+
+/* galeri */
+.galeri .row h1 {
+	font-size: 3vmax;
+	font-family: "Libre Baskerville", serif;
+	color: black;
+	font-weight: bold;
+}
+
+.galeri {
+	background-color: #ffd42d;
+}
+.galeri .card p {
+	font-family: "Libre Baskerville", serif;
+	font-style: italic;
+}
+
+.galeri .card {
+	border-radius: 20px;
+	background-color: transparent;
+	transform-style: preserve-3d;
+}
+.galeri .card h5 {
+	font-weight: bold;
+	width: 40%;
+	padding: 1px;
+	border-radius: 20px;
+	text-align: left;
+	color: white;
+}
+
+.galeri .card a {
+	background-color: black;
+	border: none;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.galeri .card a:hover {
+	background-color: inherit;
+	color: black;
+	border: 1px solid black;
+}
+.galeri h5 {
+	transition: 0.5s;
+}
+.galeri .card img {
+	transition: 0.5s;
+}
+.galeri a.btn {
+	transition: 0.5s;
+}
+/* hover efek */
+.galeri .card:hover img {
+	transform: scale(1.2) rotate(10deg) translate3d(0, 0, 50px);
+}
+
+.card:hover a.btn {
+	transform: translate3d(0, 0, 100px);
+}
+.card:hover h5 {
+	transform: translate3d(0, 0, 100px);
+}
+
+/* untuk form */
+#kirims {
+	background-color: #ffd42d;
+	width: 15em;
+	font-weight: bold;
+	color: #fff;
+	padding: 15px 5px;
+	border-radius: 40px;
+}
+#kirims:hover {
+	background-color: #fff;
+	color: #ffd42d;
+	transform: scale(0.99);
+	border: 1px solid #ffd42d;
+}
+
+.foot {
+	position: absolute;
+
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	width: 15vmax;
+	z-index: 200;
+	margin-top: -53em;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	z-index: 100;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+svg.footer1 {
+	display: flex;
+	position: relative;
+	z-index: 2000;
+}
+/* //jumbotron */
+@media screen and (max-width: 768px) {
+	.contack h2.h2 {
+		margin-left: 20px;
+	}
+	.navbar {
+		width: 100vmin;
+	}
+	.kontak h2 {
+		padding: 5px;
+	}
+	.main .container.hover:hover h1 {
+		width: 50%;
+	}
+	.foot {
+		margin-top: 5em;
+		display: flex;
+		transform: translateX(0em);
+		z-index: 1;
+		width: 20vmax;
+	}
+	.formcontact {
+		padding: 2em;
+	}
+	.kontentdeskripsi {
+		padding: 1em;
+	}
+	p {
+		font-size: 1vmax;
+	}
+
+	html {
+		overflow-x: hidden;
+	}
+	svg.footer1 {
+		position: relative;
+		z-index: 2000;
+	}
+}
