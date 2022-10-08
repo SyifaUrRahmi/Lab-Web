@@ -202,7 +202,6 @@ html {
 	-moz-osx-left: 0;
 	-moz-osx-bottom: 0;
 	-moz-osx-right: 0;
-	z-index: 99999999999999999999999999999999999999;
 	cursor: pointer;
 	opacity: 1;
 	position: absolute;
