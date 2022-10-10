@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+ 
+  /* splash screen   */
+  @keyframes splash{
+    0%{
+        
+        
+       height: 120%;
+    }
+
+
+
+    100%{
+      
+        
+        height: 0;
+        z-index: -1;
+        
+      
+    }}
+@keyframes hallo{
+        0%{
+            
+            
+           opacity: 0;
+        }
+    
+       50%{
+           opacity: 1;
+       }
+    
+        100%{
+          
+            
+            opacity: 0;
+          
+        }}
+@keyframes spin{
+            0%{
+                
+                
+               opacity: 0;
+            }
+        
+           50%{
+               opacity: 1;
+           }
+        
+            100%{
+              
+                
+                opacity: 0;
+              
+            }}
+@keyframes spinover{
+                0%{
+                    opacity: 0;
+                }
+                80%{
+                    
+                    
+                   opacity: 1;
+                }
+
+            
+                100%{
+                  
+                    
+                    opacity: 0;
+                  
+                }}
+    
+  
+  div.splash1{
+    color: white;
+    margin-top: -100px;
+    display: flex;
+    position: fixed;
+    z-index: 100000000;
+    height: 120%;
+    width: 100%;
+    background-color: #000000;
+    animation: splash 2s  ease 1 alternate forwards;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    animation-delay: 3s;
+  }
+
+.splash1 ul{
+    display: flex;
+    list-style: none;
+    color: #fff;
+    font-size: 5vmax;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+
+}
+/* spin */
+.spin .btn1{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.spin{
+    margin-top: 13vmax;
+    color: white;
+    animation: spin 0.2s  ease infinite alternate forwards;
+    animation: spinover 3s  ease 1 alternate forwards;
+}
+
+/* spin */
+.splash1 ul li{
+    position: absolute;
+    opacity: 0;
+    text-transform: uppercase;
+
+}
+div.splash1 ul li:nth-child(1){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 0.25s;
+    
+}
+div.splash1 ul li:nth-child(2){
+    animation: hallo  0.3s  ease 1 alternate forwards;
+    animation-delay: 0.5s;
+    
+}
+div.splash1 ul li:nth-child(3){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 0.75s;
+    
+}
+div.splash1 ul li:nth-child(4){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 1s;
+    
+}
+div.splash1 ul li:nth-child(5){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 1.25s;
+    
+}
+div.splash1 ul li:nth-child(6){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 1.5s;
+    
+}
+div.splash1 ul li:nth-child(7){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 1.75s;
+    
+}div.splash1 ul li:nth-child(8){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 2s;
+    
+}
+div.splash1 ul li:nth-child(9){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 2.25s;
+    
+}
+div.splash1 ul li:nth-child(10){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 2.5s;
+    
+}
+div.splash1 ul li:nth-child(11){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 2.75s;
+    
+}
+div.splash1 ul li:nth-child(12){
+    animation: hallo 0.3s  ease 1 alternate forwards;
+    animation-delay: 3s;
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color:#DE5B3B ;
+    overflow-x: hidden;
+}
+.navbar{
+    font-size: 12px;
+    padding: 0;
+    font-family: 'IM Fell English', serif;
+    font-weight:400;
+}
+
+
+
+
+.navbar a:hover{
+    font-weight: bold;
+    color:white;
+}
+
+
+/* 
+layar 2 */
+.body2{
+    background-color:#DE5B3B;
+   
+}
+.jumbotron2{
+    background-color:#DE5B3B;
+    padding: 0 5px;
+    padding-top: 200px;
+    padding-bottom: 140px;
+    color: white;
+    display: block;
+   
+   
+
+}
+.jumbotron2 img{
+    width: 25vmax;
+   transition: 2s;
+   cursor: pointer;
+    display: block;
+ 
+}
+.jumbotron2 p{
+    opacity: 0;
+    transition: 2s;
+    padding-top: 30%;
+}
+.jumbotron2 h3:hover ~ p{
+    opacity: 1;
+    padding-top: 0%;
+}
+.jumbotron2 .g1:hover {
+    margin-top: -50px;
+
+}
+.jumbotron2 .gue2 h3:hover{
+    width: 100%;
+    color: #DE5B3B;
+}
+.jumbotron2 .gue h3:hover{
+    width: 80%;
+    color: #DE5B3B;
+}
+.jumbotron2 .g1:hover~.g2 {
+    -moz-transform: translateX(50px)  scale(1.5);
+    -webkit-transform: translateX(50px)  scale(1.5);
+    transform: translateX(50px)  scale(1.5);
+
+}
+.body2  .jumbotron2 h3{
+    font-size: 7vmax;
+    background-color: rgb(58, 58, 58);
+    width: 0px;
+    font-family: 'IM Fell English', serif;
+    transition: 2s;
+}
+body .jumbotron2 .gue{
+   padding-top: 25%;
+  
+}
+/* konrten */
+.kontent .row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.kontent h1{
+    font-size:4.5vmax;
+    color:#303030;
+    font-family: 'Montserrat',sans-serif;
+    font-weight:lighter;
+    line-height: 5rem;
+}
+.kontent i{
+   
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1rem;
+    
+}
+.kontent .textkanan i{
+    font-size: 1rem;
+ 
+}
+.kontent div.textkiri{
+    text-align: justify;
+}
+.kontent .textkiri i{
+    text-align: justify;
+}
+.kontent div{
+    margin:2rem ;
+}
+.kontent img.topi{
+    position: absolute;
+   transform: translateX(-3em) translateY(-3em);
+}
+/* animaSi topi */
+.orangdantopi:hover img.topi{
+    transform: translateX(-2.5em) translateY(-20em) rotate(20deg);
+}
+/* .kontent div.orangdantopi:hover div.topi{
+    position: absolute;
+   
+} */
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: -150px;
+    color: white;
+    background-color: black;
+
+
+}
+
+@media screen and (max-width:768px) {
+    html{
+        overflow-x: hidden;
+    }
+    .body2 h3{
+      margin-top: -20%;
+    }
+    .jumbotron2 p{
+        opacity: 0;
+        transition: 2s;
+        padding-top: 5%;
+    }
+    .kontent h1{
+        font-size: 6vmax;
+        line-height: 5vmax;
+        
+    }
+    .kontent i{
+        opacity: 1;
+        font-size: 1.3vmax;
+
+  
+    }
+   .kontent img.topi{
+        transform: translateX(-1.5em) translateY(-1.3em);
+    }
+    .gambargue {
+      padding: 0 15vmax;
+    }
+}
+
