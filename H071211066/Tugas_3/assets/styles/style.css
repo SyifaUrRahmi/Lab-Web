@@ -1,0 +1,52 @@
+* {
+	font-family: "Times New Roman", Times, serif;
+}
+a {
+	text-decoration: none !important;
+	color: #000;
+}
+/* Start Navbar */
+.navbar {
+	background-color: #07b1bc;
+	width: 100%;
+	padding: 10px 12px;
+}
+.container-fluid {
+	background-color: #07b1bc;
+	width: 100%;
+}
+nav {
+	font-size: 20px;
+}
+/* End Navbar */
+
+/* Start Carousel */
+.carousel img {
+	height: 85vh;
+	object-fit: cover;
+}
+/* End Carousel */
+
+/* Start Gallery */
+#card {
+	align-items: center;
+	text-align: center;
+}
+#card img {
+	height: 200px;
+}
+.card {
+	background-color: #07b1bc;
+}
+.deskripsi-card {
+	background-color: #07b1bc;
+}
+/* End Gallery */
+
+/* Start Alert */
+.alert {
+	width: 100%;
+	margin-bottom: 0 !important;
+	background-color: #07b1bc;
+}
+/* End Alert */
