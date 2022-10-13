@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nomor 1</title>
+		<script>
+			let name = prompt("Masukkan Nama Anda", "Nama Kamu");
+			let yn = prompt(
+				"Sudah Mengumpulkan Tugas Praktikum?",
+				"Yes/No"
+			).toLowerCase();
+			if (yn == "yes") {
+				let ast = prompt("Ikut Asistensi?", "Yes/No").toLowerCase();
+				if (ast == "yes") {
+					let q = prompt("Sudah Berapa Kali Asistensi?", "1/2");
+					if (q == "1") {
+						console.log("Asistensi Sekali Lagi yah " + name);
+					} else if (q == "2") {
+						console.log("Hebat Kamu " + name);
+					} else {
+						console.log("Masukkan Inputan yang benar 1 atau 2");
+					}
+				} else if (ast == "no") {
+					console.log("Asistensi dulu yah " + name);
+				} else {
+					console.log("Masukkan Inputan yang benar Yes atau No");
+				}
+			} else if (yn == "no") {
+				console.log("Jangan Lupa dikerja Tugas Praktikumnya " + name);
+			} else {
+				console.log("Masukkan Inputan yang benar Yes atau No");
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Praktikum 3</h1>
+	</body>
+</html>
