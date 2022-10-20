@@ -38,6 +38,7 @@ function start() {
 		document.getElementById("start").innerText = "Play Again?";
 	}
 	document.getElementById("bet").value = "";
+	cek();
 }
 document.getElementById("take").disabled = true;
 function take() {
