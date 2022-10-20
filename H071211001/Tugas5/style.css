@@ -1,0 +1,57 @@
+body {
+	background-image: url(/assets/images/cards6.jpg);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	/* background-repeat: repeat-y; */
+}
+h1 {
+	color: rgb(193, 108, 23);
+}
+.middle {
+	border: solid;
+	margin-top: 20px;
+	background-color: rgb(168, 164, 164);
+	width: 65vh;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	justify-content: center;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: white;
+	font-size: 20px;
+}
+#message-e1 {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: white;
+	background: transparent;
+	/* font-size: 23px; */
+}
+#perhatian {
+	/* font-size: 23px; */
+	color: rgb(193, 108, 23);
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+button {
+	border: none;
+	background: transparent;
+	background-color: orange;
+}
+button.takecard {
+	background-color: grey;
+	color: white;
+}
+.money {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: white;
+
+	/* font-size: 23px; */
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}

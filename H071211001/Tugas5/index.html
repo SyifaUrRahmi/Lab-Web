@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BlackCard</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="js/bootstrap.bundle.min.js" />
+	</head>
+	<body>
+		<div class="middle">
+			<h1>BlackJack</h1>
+			<p id="message-e1">Want to play a round?</p>
+			<p>Your Cards :</p>
+			<p id="yourCard"></p>
+			<p>Sum :</p>
+			<p id="sum-el"></p>
+			<button onclick="startGame()" class="mb-2" id="buttonStartGame">
+				START GAME
+			</button>
+			<button class="takecard" onclick="takeCard()">TAKE CARD</button>
+			<h4 id="perhatian"></h4>
+
+			<h4 class="pt-5">Your Money : Rp <span id="money">5000</span></h4>
+
+			<form>
+				6
+				<input
+					class="form-control"
+					id="setBet"
+					type="number"
+					placeholder="Set Your Bet..."
+					aria-label="default input example"
+				/>
+				<button
+					class="btn btn-warning mt-3"
+					onclick="window.location.reload();"
+					type="button"
+				>
+					Reset Money
+				</button>
+			</form>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
