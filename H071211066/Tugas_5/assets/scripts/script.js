@@ -37,6 +37,7 @@ function start() {
 		document.getElementById("take").disabled = false;
 		document.getElementById("start").innerText = "Play Again?";
 	}
+	document.getElementById("bet").value = "";
 }
 document.getElementById("take").disabled = true;
 function take() {
@@ -62,9 +63,11 @@ function cek() {
 		document.getElementById("uang").innerHTML = "Your Money : Rp. " + uang;
 	} else if (sum > 21) {
 		document.getElementById("km").innerHTML = "You Lose";
-		if (uang === 0) {
-			alert("Your money = 0 Please Reset Your Money");
-		}
+		setTimeout(() => {
+			if (uang === 0) {
+				alert("Your money = 0 Please Reset Your Money");
+			}
+		}, 1000);
 	}
 }
 
