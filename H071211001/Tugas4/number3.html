@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>INDAH KURNIA ILAHI - H071211001</title>
+
+		<script>
+			// var strng = prompt("Input text");
+			// var counts = {};
+			// for (var i = 0; i < strng.length; i++) {
+			// 	var ch = strng.charAt(i);
+			// 	if (ch == " ") {
+			// 		ch = "spasi";
+			// 	}
+			// 	var count = counts[ch];
+			// 	counts[ch] = count ? count + 1 : 1;
+			// }
+			// for (ch in counts) {
+			// 	console.log(ch + " = " + counts[ch]);
+			// }
+
+			let input = prompt("Input Text");
+			let textmap = {};
+
+			for (let i = 0; i < input.length; i++) {
+				let keymap = input[i] == " " ? "spasi" : input[i];
+				if (textmap[keymap]) {
+					textmap[keymap] = textmap[keymap] + 1;
+				} else {
+					textmap[keymap] = 1;
+				}
+			}
+			for (a in textmap) {
+				console.log(a + " = " + textmap[a]);
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
