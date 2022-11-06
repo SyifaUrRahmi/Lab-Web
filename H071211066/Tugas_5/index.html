@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BlackJack</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/styles/style.css" />
+	</head>
+	<body>
+		<div
+			id="kotak"
+			class="position-absolute top-50 start-50 translate-middle bg-dark rounded text-center w-50"
+		>
+			<div class="p-2 m-4">
+				<b id="judul" class="text text-light"
+					>Black<b class="text text-info">Jack</b></b
+				>
+			</div>
+			<b id="km" class="text text-warning p-2"></b>
+			<p class="m-4 text-light">Play A Round?</p>
+			<div class="text-light">
+				Your Cards : <span id="c1" class="text text-light m-2"></span>
+			</div>
+			<div class="text text-light m-2">
+				Sum : <span id="sum" class="text text-light"></span>
+			</div>
+			<button
+				id="start"
+				class="btn btn-info m-2"
+				onclick="start()"
+				type="submit"
+			>
+				Start Game
+			</button>
+			<button id="take" class="btn btn-info m-2" onclick="take()" type="submit">
+				Take Card
+			</button>
+			<p id="uang" class="p-2 m-4 text-light">Your Money:</p>
+			<p class="text text-light"></p>
+			<input
+				type="number"
+				id="bet"
+				name="bet"
+				placeholder="Set Your Bet.."
+			/><br />
+			<div class="p-2 m-4">
+				<button class="btn btn-warning" onclick="reset()">Reset Money</button>
+			</div>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+			crossorigin="anonymous"
+		></script>
+		<script src="assets/scripts/script.js"></script>
+	</body>
+</html>
