@@ -52,27 +52,21 @@ if (isset($_POST['simpan'])) {
 
     if ($orderNumber && $nama && $alamat && $service && $pembayaran) {
         if ($op == 'UPDATE') { {
-                $sql1 = "UPDATE customers SET orderNumber = '$orderNumber', nama='$nama',alamat='$alamat',service='$service',pembayaran='$pembayaran' WHERE customerNumber = '$customerNumber'";
-                $q1 = mysqli_query($conn, $sql1);
-                if ($q1) {
+                try {
+                    $sql1 = "UPDATE customers SET orderNumber = '$orderNumber', nama='$nama',alamat='$alamat',service='$service',pembayaran='$pembayaran' WHERE customerNumber = '$customerNumber'";
+                    $q1 = mysqli_query($conn, $sql1);
                     $sukses = "Data berhasil diupdate";
-                } else {
-                    $error = "Data gagal diupdate";
+                } catch (Exception $e) {
+                    $error = "Data duplikat, silahkan mengisi data dengan benar";
                 }
             }
         } else {
-            $result = mysqli_query($conn, "SELECT * FROM customers WHERE orderNumber = '$orderNumber'");
-            $num_rows = mysqli_num_rows($result);
-            if ($num_rows) {
-                $error = "Data duplikat, silahkan mengisi data dengan benar";
-            } else {
+            try {
                 $sql1 = "INSERT INTO customers(orderNumber,nama,alamat,service,pembayaran) VALUES ('$orderNumber','$nama','$alamat','$service','$pembayaran')";
                 $q1 = mysqli_query($conn, $sql1);
-                if ($q1) {
-                    $sukses = "Berhasil memasukkan data baru";
-                } else {
-                    $error = "Gagal Memasukkan Data";
-                }
+                $sukses = "Berhasil memasukkan data baru";
+            } catch (Exception $e) {
+                $error = "Data duplikat, silahkan mengisi data dengan benar";
             }
         }
     } else {
@@ -89,19 +83,28 @@ if (isset($_POST['simpan'])) {
     <meta name="viewport" content="customerNumber=device-width, initial-scale=1.0">
     <title>Data customers</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <style>
         body {
-            background-color: black;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #696665;
+            font-family: 'Quicksand', 'Sans-serif';
         }
 
         .mx-auto {
             width: 1050px
         }
 
+        .card-header {
+            background-color: #D8D8D8;
+        }
+
+        .table>thead>tr {
+            background-color: #696665;
+        }
+
         .card {
             margin-top: 10px;
-            background-color: #AFAFAF;
+
         }
     </style>
 </head>
@@ -109,8 +112,10 @@ if (isset($_POST['simpan'])) {
 <body>
     <div class="mx-auto">
         <div class="card">
-            <div class="card-header text-white bg-secondary">
-                <center>Coin Laundry Alhamdulillah</center>
+            <div class="card-header text-dark">
+                <b>
+                    <center>Coin Laundry Alhamdulillah</center>
+                </b>
             </div>
             <div class="card-body">
                 <?php
@@ -135,7 +140,7 @@ if (isset($_POST['simpan'])) {
                 ?>
                 <form action="" method="POST">
                     <div class="mb-3 row">
-                        <label for="orderNumber" class="col-sm-2 col-form-label">Order Number</label>
+                        <label for="orderNumber" class="col-sm-2 col-form-label">No Order</label>
                         <div class="col-sm-10">
                             <input type="number" class="form-control" id="orderNumber" name="orderNumber" value="<?php echo $orderNumber ?>">
                         </div>
@@ -182,15 +187,17 @@ if (isset($_POST['simpan'])) {
         </div>
 
         <div class="card">
-            <div class="card-header text-white bg-secondary">
-                <center>Data Customer</center>
+            <div class="card-header text-dark">
+                <b>
+                    <center>Data Customer</center>
+                </b>
             </div>
             <div class="card-body">
-                <table class="table">
+                <table class="table table-bordered">
                     <thead>
-                        <tr>
-                            <th scope="col">No</th>
-                            <th scope="col">Order Number</th>
+                        <tr class="text-light">
+                            <th scope="col"><i class="bi bi-tags-fill"></i></th>
+                            <th scope="col">No Order</th>
                             <th scope="col">Nama</th>
                             <th scope="col">Alamat</th>
                             <th scope="col">Service</th>
@@ -220,16 +227,22 @@ if (isset($_POST['simpan'])) {
                                 <td scope="row"><?php echo $service ?></td>
                                 <td scope="row"><?php echo $pembayaran ?></td>
                                 <td scope="row">
-                                    <a href="index.php?op=UPDATE&customerNumber=<?php echo $customerNumber ?>"><button type="button" class="btn btn-primary">Update</button></a>
-                                    <a href="index.php?op=DELETE&customerNumber=<?php echo $customerNumber ?>" onclick="return confirm('Yakin mau delete data?')"><button type="button" class="btn btn-danger">Delete</button></a>
+                                    <a href="index.php?op=UPDATE&customerNumber=<?php echo $customerNumber ?>"><button type="button" class="btn btn-warning"><i class="bi bi-pencil-fill"></i> Edit</button></a>
+                                    <a href="index.php?op=DELETE&customerNumber=<?php echo $customerNumber ?>" onclick="return confirm('Yakin mau delete data?')"><button type="button" class="btn btn-danger"><i class="bi bi-trash3-fill"></i> Hapus</button></a>
                                 </td>
                             </tr>
                         <?php
                         }
                         ?>
                     </tbody>
-
                 </table>
+                <footer class="sticky-footer">
+                    <div class="container">
+                        <div class="text-center">
+                            <small>Copyright © CoinLaundryAlham 2022</small>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
