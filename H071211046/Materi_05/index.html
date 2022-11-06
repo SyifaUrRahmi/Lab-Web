@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>H071211046_Putri Aulia Nur Salsabila</title>
+		<link rel="stylesheet" href="assets/style/style.css" />
+	</head>
+	<body class="bgimage">
+		<div class="container">
+			<div class="container1">
+				<h1
+					style="
+						color: #ca90f5;
+						font-size: 60px;
+						margin-top: 10px;
+						margin-bottom: 10px;
+					"
+				>
+					BlackJack
+				</h1>
+				<h2 class="mb-5" style="color: #ddcedc; margin-top: 10px">
+					Play a Round?
+				</h2>
+				<h2 style="color: #ddcedc; margin-top: 10px; margin-bottom: 10px">
+					Your Cards:
+				</h2>
+				<div class="yourCard mb-3" id="yourCard"></div>
+				<h2 style="color: #ddcedc; margin-top: 10px; margin-bottom: 10px">
+					Sum:
+				</h2>
+				<h2
+					id="yourSum"
+					style="color: #ddcedc; font-size: 20px; margin-top: 2px"
+				></h2>
+				<div class="d-grid gap-2 d-md-block mb-5">
+					<button
+						class="btn btn-warning"
+						onclick="startGame()"
+						id="startGameButton"
+						type="button"
+					>
+						Start Game
+					</button>
+					<button class="btn btn-secondary" onclick="takeCard()" type="button">
+						Take Card
+					</button>
+					<h3 id="warning" style="color: #7e346a"></h3>
+				</div>
+				<h2 style="color: #ddcedc">Your Money:</h2>
+				<div class="money">
+					<h2 style="color: #ddcedc; margin-top: 10px; margin-bottom: 10px">
+						Rp.
+						<h2
+							id="yourMoney"
+							style="color: #ddcedc; margin-top: 10px; margin-bottom: 10px"
+						>
+							5000
+						</h2>
+					</h2>
+				</div>
+			</div>
+			<form>
+				<input
+					class="form-control form-control-sm mb-3"
+					id="bet"
+					type="number"
+					placeholder="Set Your Bet"
+					aria-atomic=".form-control-sm example"
+					style="margin-bottom: 5vh"
+				/>
+			</form>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
