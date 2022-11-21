@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="Assets/css/game.css" />
+	</head>
+	<body>
+		<div class="bagian2">
+			<h3><span class="auto-type"></span></h3>
+			<button class="next">NEXT.....</button>
+		</div>
+		<div class="bagian3">
+			<h1>YOUR MONEY</h1>
+			<h3>Rp.<span id="uangmu">5000</span></h3>
+			<p><span id="alert1"></span></p>
+			<form>
+				<input
+					type="number"
+					id="bet"
+					name="bet"
+					min="0"
+					max="5000"
+					placeholder="Masukan bet anda"
+					min="0"
+					max="5000"
+				/><br />
+			</form>
+			<button class="start">START</button>
+		</div>
+		<audio
+			controls
+			hidden
+			loop
+			id="audio2"
+			webkit-playsinline="true"
+			playsinline="true"
+		>
+			<source src="Assets/Audio/typing.mp3" type="audio/mpeg" />
+		</audio>
+		<audio
+			controls
+			hidden
+			loop
+			id="audiokalah22"
+			webkit-playsinline="true"
+			playsinline="true"
+		>
+			<source src="Assets/Audio/ketikakalah.mp3" type="audio/mpeg" />
+		</audio>
+		<audio
+			controls
+			hidden
+			id="audiomati"
+			webkit-playsinline="true"
+			playsinline="true"
+		>
+			<source src="Assets/Audio/ketikamati.mp3" type="audio/mpeg" />
+		</audio>
+		<audio
+			controls
+			hidden
+			loop
+			id="audio"
+			webkit-playsinline="true"
+			playsinline="true"
+		>
+			<source src="Assets/Audio/horor2.mp3" type="audio/mpeg" />
+		</audio>
+		<audio
+			controls
+			hidden
+			id="audio3"
+			webkit-playsinline="true"
+			playsinline="true"
+		>
+			<source src="Assets/Audio/click.mp3" type="audio/mpeg" />
+		</audio>
+
+		<div class="cup-wrap">
+			<div class="smoke-wrap">
+				<img class="smoke" src="Assets/images/smoke.png" alt="smoke" />
+			</div>
+			<div class="smoke-wrap">
+				<img class="smoke2" src="Assets/images/smoke.png" alt="smoke" />
+			</div>
+			<div class="smoke-wrap">
+				<img class="smoke3" src="Assets/images/smoke.png" alt="smoke" />
+			</div>
+		</div>
+
+		<!-- <div class="img1"></div>
+		<div class="img2"></div>
+		<div class="img3"></div>
+		<div class="img4"></div> -->
+		<h1 class="bet1">YOUR BET</h1>
+		<h3 class="bet2">Rp.<span id="uangmu2"></span></h3>
+		<h3 class="sum1">Your SUM = <span id="summu">0</span></h3>
+		<h3 class="sum2">Dealers SUM =<span id="dilersum"> 21</span></h3>
+		<h1 class="money1">YOUR MONEY</h1>
+		<h3 class="money2">Rp.<span id="uangmuingame"></span></h3>
+		<button id="take">TAKE CARD</button>
+		<button id="stay">STAY</button>
+
+		<!-- gambar kartu -->
+		<div class="kartu">
+			<!-- keriting -->
+			<img src="Assets/images/k/k2.png" />
+			<img src="Assets/images/k/k3.png" />
+			<img src="Assets/images/k/k4.png" />
+			<img src="Assets/images/k/k5.png" />
+			<img src="Assets/images/k/k6.png" />
+			<img src="Assets/images/k/k7.png" />
+			<img src="Assets/images/k/k8.png" />
+			<img src="Assets/images/k/k9.png" />
+			<img src="Assets/images/k/k10.png" />
+			<img src="Assets/images/k/kk.png" />
+			<img src="Assets/images/k/kq.png" />
+			<img src="Assets/images/k/kj.png" />
+			<img src="Assets/images/k/ka.png" />
+			<!-- love -->
+			<img src="Assets/images/l/l2.png" />
+			<img src="Assets/images/l/l3.png" />
+			<img src="Assets/images/l/l4.png" />
+			<img src="Assets/images/l/l5.png" />
+			<img src="Assets/images/l/l6.png" />
+			<img src="Assets/images/l/l7.png" />
+			<img src="Assets/images/l/l8.png" />
+			<img src="Assets/images/l/l9.png" />
+			<img src="Assets/images/l/l10.png" />
+			<img src="Assets/images/l/lk.png" />
+			<img src="Assets/images/l/lq.png" />
+			<img src="Assets/images/l/lj.png" />
+			<img src="Assets/images/l/la.png" />
+			<!-- scope -->
+			<img src="Assets/images/s/s2.png" />
+			<img src="Assets/images/s/s3.png" />
+			<img src="Assets/images/s/s4.png" />
+			<img src="Assets/images/s/s5.png" />
+			<img src="Assets/images/s/s6.png" />
+			<img src="Assets/images/s/s7.png" />
+			<img src="Assets/images/s/s8.png" />
+			<img src="Assets/images/s/s9.png" />
+			<img src="Assets/images/s/s10.png" />
+			<img src="Assets/images/s/sk.png" />
+			<img src="Assets/images/s/sq.png" />
+			<img src="Assets/images/s/sj.png" />
+			<img src="Assets/images/s/sa.png" />
+			<!-- waji -->
+			<img src="Assets/images/w/w2.png" />
+			<img src="Assets/images/w/w3.png" />
+			<img src="Assets/images/w/w4.png" />
+			<img src="Assets/images/w/w5.png" />
+			<img src="Assets/images/w/w6.png" />
+			<img src="Assets/images/w/w7.png" />
+			<img src="Assets/images/w/w8.png" />
+			<img src="Assets/images/w/w9.png" />
+			<img src="Assets/images/w/w10.png" />
+			<img src="Assets/images/w/wk.png" />
+			<img src="Assets/images/w/wq.png" />
+			<img src="Assets/images/w/wj.png" />
+			<img src="Assets/images/w/wa.png" />
+			<img src="Assets/images/w/cardd.png" />
+		</div>
+
+		<!-- bagian ketika menang -->
+		<div id="ketikamenang">
+			<h1>YOU WIN</h1>
+			<button id="playagain111">Play again</button>
+		</div>
+		<!-- bagian ketika kalah -->
+		<div id="ketikakalah">
+			<h1>LOSE</h1>
+			<button id="playagain">Play again</button>
+		</div>
+		<div id="ketikaUanghabis">
+			<h1>OVER</h1>
+			<button id="playagain222">Restart</button>
+		</div>
+		<script src="Assets/js/game.js"></script>
+		<!-- // buat type -->
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<script>
+			var typed = new Typed(".auto-type", {
+				strings: [
+					"This game is a death game, this game I made inspired by the resident evil 7 game.",
+					"We give you Rp.5000 in this game,if your money runs out, you will die",
+				],
+				typeSpeed: 80,
+				backSpeed: 30,
+				loop: true,
+			});
+		</script>
+
+		<!-- <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+		<script type="text/javascript">
+			VanillaTilt.init(document.querySelectorAll("img"), {
+				max: 5,
+				speed: 70000,
+			});
+		</script> -->
+	</body>
+</html>

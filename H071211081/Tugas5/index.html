@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="Assets/css/style.css" />
+	</head>
+	<body>
+		<audio controls hidden loop id="audio">
+			<source src="Assets/horor.ogg" type="audio/ogg" />
+			<source src="Assets/Audio/horor.mp3" type="audio/mpeg" />
+		</audio>
+		<audio controls hidden id="audio2">
+			<source src="Assets/click.ogg" type="audio/ogg" />
+			<source src="Assets/Audio/click.mp3" type="audio/mpeg" />
+		</audio>
+		<!-- bagian1 -->
+		<div class="bagian1">
+			<button class="mulai">START</button>
+		</div>
+		<!-- bagian2 -->
+		<h3>press enter to continue</h3>
+		<section>
+			<div class="container">
+				<img class="text" src="Assets/images//text.png" alt="" />
+				<img class="light" src="Assets/images//light.png" alt="" />
+				<img class="card" src="Assets/images//card.png " alt="" />
+				<img class="card2" src="Assets/images//card2.png" alt="" />
+			</div>
+		</section>
+
+		<script
+			type="text/javascript"
+			src="/Assets/js/vanilla-tilt.min.js"
+		></script>
+		<script type="text/javascript">
+			VanillaTilt.init(document.querySelector("section"), {
+				max: 5,
+				speed: 70000,
+			});
+		</script>
+		<script src="Assets/js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			let perkalian = prompt("perkalian berapa?");
+			let total = 0;
+			if (!isNaN(parseInt(perkalian))) {
+				let batasperkalian = prompt("Ingin dikalikan sampai berapa ?");
+				if (!isNaN(parseInt(batasperkalian))) {
+					for (i = 1; i <= batasperkalian; i++) {
+						let hasil = i * perkalian;
+						total += hasil;
+						console.log(i + " x " + perkalian + " = " + hasil);
+					}
+					console.log("total = " + total);
+				} else {
+					alert(batasperkalian + " bukan merupakan angka");
+				}
+			} else {
+				alert(perkalian + " bukan merupakan angka");
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
