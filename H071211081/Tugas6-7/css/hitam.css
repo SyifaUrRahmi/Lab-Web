@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background: #212428;
+}
+section.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #212428;
+	height: 8vmin;
+	width: 100vmax;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+	font-family: "Montserrat";
+	font-weight: bold;
+}
+.navbar img {
+	width: 4em;
+	margin-left: 7em;
+}
+.navbar ul {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-left: -35em;
+	font-family: "Montserrat";
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+.navbar a {
+	padding: 1px 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #f9674a;
+	margin-left: 2em;
+	transition: 1s;
+	height: 40px;
+	border-radius: 12px;
+}
+.navbar a:hover {
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+}
+
+.navbar a:last-child {
+	margin-left: 2em;
+	padding: 1px 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	background-color: #212428;
+	border-radius: 9px;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+	transition: 1s;
+}
+.navbar a:first-child {
+	text-decoration: underline;
+}
+.navbar a:last-child:hover {
+	background-color: #f9674a;
+	color: white;
+	margin-top: -4px;
+}
+tr a {
+	font-size: 1.3em;
+	margin-left: 1.5em;
+	transition: 0.5s;
+}
+tr a:last-child:hover {
+	color: #f9674a;
+}
+tr a:first-child:hover {
+	color: rgb(0, 255, 64);
+}
+.table {
+	margin-top: 5em;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 60%;
+	margin-left: 2em;
+	height: 60vmin;
+	border-radius: 12px;
+	background: #212428;
+}
+table {
+	border-radius: 1.5em;
+	margin-top: 1em;
+}
+tr a {
+	color: white;
+}
+tr {
+	cursor: pointer;
+	font-family: "Montserrat";
+	transition: 1s;
+}
+tr:hover {
+	background: #212428;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+}
+tr:first-child:hover {
+	background: none;
+	box-shadow: none;
+}
+
+tr:hover td:last-child {
+	opacity: 1;
+}
+th {
+	background: #212428;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+	padding: 1.8em 3em;
+	font-size: 1em;
+	color: #f9674a;
+	letter-spacing: 1px;
+	font-family: "Montserrat";
+	text-transform: uppercase;
+}
+
+th:first-child {
+	border-top-left-radius: 1.5em;
+}
+th:last-child {
+	border-top-right-radius: 1.5em;
+	opacity: 0;
+}
+
+th:nth-child(5) {
+	border-top-right-radius: 1.5em;
+}
+
+tr:nth-child(odd) td {
+	background-color: rgba(255, 83, 83, 0.683);
+	color: white;
+}
+
+tr:first-child {
+	background-color: rgba(255, 255, 255, 0);
+}
+tr td:last-child {
+	opacity: 0;
+	background-color: rgba(85, 85, 85, 0);
+}
+tr:last-child td:first-child {
+	border-bottom-left-radius: 1.5em;
+}
+tr:last-child td:last-child {
+	border-bottom-right-radius: 1.5em;
+}
+
+td.nmr {
+	text-align: center;
+	width: 0.1em;
+}
+
+@keyframes muncul {
+	from {
+		opacity: 0;
+		width: 0em;
+	}
+	to {
+		opacity: 1;
+		width: 24em;
+	}
+}
+@keyframes muncul2 {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+body {
+	height: 100vmin;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 40px;
+}
+/* input */
+.ko {
+	margin-top: 70px;
+	width: 380px;
+	height: 500px;
+	padding: 50px 35px 5px 0px;
+	border-radius: 40px;
+	background: #212428;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+	animation: muncul 2s ease 1 alternate forwards;
+}
+
+.nim,
+.nama,
+.alamat {
+	opacity: 0;
+	list-style: none;
+	border: 0;
+	margin-bottom: 30px;
+	border-radius: 25px;
+	box-shadow: inset 5px 5px 13px #1a1c1f, inset -5px -5px 13px #282c31;
+
+	animation: muncul2 3s 1s ease 1 alternate forwards;
+}
+.fakultas {
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	border: 0;
+	margin-bottom: 30px;
+	height: 36px;
+	border-radius: 25px;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+	animation: muncul2 3s 1s ease 1 alternate forwards;
+}
+select {
+	opacity: 0;
+	border: 0;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	background-color: transparent;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	color: rgb(87, 86, 86);
+	animation: muncul2 3s 1s ease 1 alternate forwards;
+}
+li {
+	list-style: none;
+}
+
+input {
+	border: none;
+	outline: none;
+	font-family: "Poppins", sans-serif;
+	background: none;
+	font-size: 18px;
+	color: white;
+	padding: 18px 10px 18px 1px;
+}
+.username ::placeholder,
+.password ::placeholder,
+.password2 ::placeholder {
+	color: white;
+	font-family: "Poppins", sans-serif;
+}
+
+.button {
+	opacity: 0;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-family: "Poppins", sans-serif;
+	width: 100%;
+	height: 60px;
+	border-radius: 30px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	background: #fc5130;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+	animation: muncul2 3s 1s ease 1 alternate forwards;
+}
+.button:hover {
+	background: #000;
+}
+.button:active {
+	background: #fc5130;
+}
+.title {
+	text-align: center;
+	font-size: 28px;
+	color: #fc5130;
+	padding-top: 24px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	width: 100%;
+}
+.log5 {
+	opacity: 0;
+	margin-left: 27px;
+	animation: muncul2 2s 2s ease 1 alternate forwards;
+}
+form i {
+	padding: 0 10px;
+	padding-left: 15px;
+}
+/* akhir form */
+@keyframes table {
+	from {
+		box-shadow: inset 5px 5px 13px #1a1c1f, inset -5px -5px 13px #282c31;
+		box-shadow: inset 0px 0px 0px #1a1c1f, inset 0px 0px 0px;
+	}
+	to {
+		box-shadow: inset 5px 5px 13px #1a1c1f, inset -5px -5px 13px #282c31;
+	}
+}
+@keyframes barisganjil {
+	from {
+		transform: translateX(40px);
+		opacity: 0;
+	}
+	to {
+		transform: translate(0);
+		opacity: 1;
+	}
+}
+@keyframes barisgenap {
+	from {
+		opacity: 0;
+		transform: translateX(-40px);
+	}
+	to {
+		transform: translate(0);
+		opacity: 1;
+	}
+}
+tr {
+	opacity: 0;
+}
+tr:nth-child(even) {
+	animation: barisgenap 4s 1s ease 1 alternate forwards;
+}
+tr:nth-child(odd) {
+	animation: barisganjil 2s 1s ease 1 alternate forwards;
+}
+.table {
+	padding-left: 2em;
+	border-radius: 3em;
+	background: #212428;
+	animation: table 2s ease 1 alternate forwards;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 5em;
+}
+/*perfakultas*/
+p {
+	width: 5em;
+}
+.alert {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	z-index: 2000;
+	opacity: 1;
+	width: 62%;
+	margin-top: 5em;
+	margin-left: 28em;
+	height: 60vmin;
+	border-radius: 31px;
+	background: #212428;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+	font-family: "Montserrat";
+	font-weight: bold;
+	transition: 1s;
+}
+.alert button {
+	background-color: #212428;
+
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+	display: none;
+	width: 10em;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	height: 70%;
+	border-radius: 1em;
+	font-size: 2em;
+	border: none;
+	transition: 1s;
+	color: white;
+	transform: 1s;
+}
+
+/* color rotase font */
+@keyframes color {
+	from {
+		filter: brightness(0);
+		opacity: 0.5;
+	}
+	to {
+		filter: hue-rotate(70);
+	}
+}
+
+.alert div {
+	width: 50%;
+	display: none;
+	display: flex;
+	font-family: "Concert One", cursive;
+	font-size: 4em;
+	color: #f9674a;
+	animation: color 5s ease alternate infinite;
+	margin-right: -1em;
+}
+
+div.alert button:hover {
+	border: none;
+	color: rgb(8, 242, 0);
+	box-shadow: 0px 0px 0px #1c1f22, 0px 0px 0px #26292e;
+}
+.icon2 .icon {
+	margin-left: 1em;
+}
+.icon2 {
+	display: none;
+	height: 100%;
+}
+.alert i {
+	font-size: 6em;
+}
+::-webkit-scrollbar {
+	width: 1em;
+	transition: 1s;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 50px;
+	background: #212428;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(145deg, #f0f0f0, #000000);
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+}
+
+td {
+	transition: 1s;
+	margin: 0;
+}
+.alert23 {
+	display: none;
+	align-items: center;
+	justify-content: space-around;
+	position: fixed;
+	z-index: 2000;
+	opacity: 1;
+	width: 62%;
+	margin-top: 5em;
+	margin-left: 28em;
+	height: 60vmin;
+	border-radius: 31px;
+	background: #212428;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+	font-family: "Montserrat";
+	font-weight: bold;
+	transition: 1s;
+}
+.alert23 .ok,
+.cancel {
+	display: none;
+}
+.alert23 button {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 120%;
+	margin: 0;
+	padding: 0;
+	height: 70%;
+	border-radius: 10%;
+	font-size: 2em;
+	border: none;
+	transition: 1s;
+	font-size: 2em;
+	background-color: #212428;
+	color: white;
+	box-shadow: 19px 19px 37px #1c1f22, -19px -19px 37px #26292e;
+}
+.confrim {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.confrim button {
+	width: 3em;
+	margin-left: 0.7em;
+	font-size: 5em;
+	color: white;
+}
+.alert23 div:first-child {
+	font-family: "Concert One", cursive;
+	font-size: 4em;
+	color: #f9674a;
+	animation: color 5s ease alternate infinite;
+	margin-right: -3em;
+}
+/* hover efect */
+.alert23 .confrim form button:first-child:hover {
+	color: red;
+	background-color: #212428;
+}
+.alert23 .confrim form button:first-child {
+	color: red;
+	background-color: #212428;
+	margin-top: 20px;
+}
+.alert23 .confrim button:last-child:hover {
+	color: rgb(8, 242, 0);
+	background-color: #212428;
+}
+a {
+	text-decoration: none;
+}
+.alert23 button:hover {
+	box-shadow: 0.5px 0.5px 0.5px #1c1f22, -0.5px -0.5px 0.5px #26292e;
+}
+/* valid dan vocus form */
+
+input:focus,
+input:valid {
+	color: #f9674a;
+}
+
+/* malam logo */
+div.siang {
+	display: none;
+	position: absolute;
+	z-index: 100;
+	border-radius: 9px;
+	box-shadow: 19px 19px 37px #2a2a2a, -19px -19px 37px #26292e;
+	top: 10px;
+	left: 10px;
+	padding: 2px;
+	cursor: pointer;
+}
+.siang i {
+	font-size: 25px;
+}
