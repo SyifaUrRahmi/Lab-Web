@@ -1,0 +1,243 @@
+label {
+	display: block;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #555;
+	background: #ecf0f3;
+}
+.login {
+	width: 380px;
+	height: 629px;
+	padding: 50px 35px 5px 0px;
+	border-radius: 40px;
+	background: #ecf0f3;
+	box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+}
+
+.username,
+.password,
+.password2 {
+	list-style: none;
+	border: 0;
+	margin-bottom: 30px;
+	border-radius: 25px;
+	box-shadow: inset 5px 5px 8px #cbced1, inset -5px -5px 8px #ffffff;
+}
+input {
+	border: none;
+	outline: none;
+	font-family: "Poppins", sans-serif;
+	background: none;
+	font-size: 18px;
+	color: #555;
+	padding: 18px 10px 18px 1px;
+}
+.username ::placeholder,
+.password ::placeholder,
+.password2 ::placeholder {
+	color: #999;
+	font-family: "Poppins", sans-serif;
+}
+.button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-family: "Poppins", sans-serif;
+	width: 100%;
+	height: 60px;
+	border-radius: 30px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	background: #fc5130;
+	box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+}
+.button:hover {
+	background: #000;
+}
+.button:active {
+	background: #fc5130;
+}
+.logo {
+	background: url("img2/logo2.png");
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 0 auto;
+	box-shadow: 0 0 2px #5f5f5f, 0 0 5px #ecf0f3, 8px 8px 15px #a7aaaf,
+		-8px -8px 15px #ffffff;
+	background-size: 150%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+li {
+	list-style: none;
+}
+.title {
+	text-align: center;
+	font-size: 28px;
+	color: #fc5130;
+	padding-top: 24px;
+	text-shadow: 10px 10px 15px #cbced1, -10px -10px 16px #ffffff;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	width: 100%;
+}
+.log5 {
+	margin-left: 27px;
+}
+i {
+	padding: 0 10px;
+	padding-left: 15px;
+}
+
+form {
+	margin-top: 6vmin;
+	display: flex;
+	justify-content: center;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: "Poppins", sans-serif;
+}
+.link {
+	padding: 20px;
+	text-align: center;
+}
+.link a {
+	text-decoration: none;
+	color: #aaa;
+	font-size: 15px;
+}
+
+.link a:hover {
+	color: #000;
+}
+.registrasi {
+	width: 380px;
+	height: 629px;
+	padding: 0px 35px 0px 0px;
+	border-radius: 40px;
+	background: #ecf0f3;
+	box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+}
+
+.registrasi .log5 {
+	margin-top: 30px;
+}
+.registrasi form {
+	margin-top: 30px;
+}
+
+/* regristrasi berhasil */
+.berhasil1 {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	text-align: center;
+	align-items: center !important;
+	justify-content: center !important;
+	display: none;
+}
+.berhasil2 {
+	width: 380px;
+	padding: 45px 35px 35px 35px;
+	display: none;
+}
+.benar {
+	color: #fc5130;
+	margin: 0 auto;
+}
+.benar i {
+	font-size: 100px;
+	color: #fc5130;
+}
+/* rarr */
+@keyframes munculrar {
+	from {
+		transform: translateX(200px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+.rarr {
+	opacity: 0;
+	position: absolute;
+	z-index: -2000;
+	animation: munculrar 2s ease 1 alternate forwards;
+}
+.rarr .img2 {
+	width: 90vmax;
+}
+/* animasi salah */
+@keyframes shake {
+	0%,
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(8px);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-8px);
+	}
+}
+
+@keyframes glow-red {
+	50% {
+		background-color: red;
+	}
+}
+
+.pof {
+	animation-name: shake, glow-red;
+	animation-duration: 0.7s, 0.35s;
+	animation-iteration-count: 1, 2;
+}
+input:focus,
+input:valid {
+	color: #f9674a;
+}
+div.night {
+	position: absolute;
+	z-index: 100;
+	border-radius: 7px;
+	box-shadow: 4px 4px 9px #bfc2c5, -4px -4px 9px #ffffff;
+	top: 20px;
+	left: 20px;
+	padding: 2px;
+	cursor: pointer;
+}
+.night i {
+	font-size: 30px;
+}
+.night a {
+	color: #555;
+}
+.night:hover {
+	background-color: #f9674a;
+	color: white;
+	margin-top: -4px;
+}

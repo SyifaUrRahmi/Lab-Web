@@ -263,9 +263,8 @@ document.getElementById("bet").onchange = function () {
 	}
 	// batas maksimum dan minimum bet
 	if (this.value > uangku) {
-		uangkita = uangku;
-		start.disabled = true;
-		alert2.innerHTML = "UANG MU TIDAK CUKUP";
+		this.value = uangku;
+		uangkita = uangku - this.value;
 	}
 	if (this.value > 0 && this.value < uangku) {
 		uangkita = uangku - this.value;
