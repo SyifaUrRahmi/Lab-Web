@@ -43,7 +43,7 @@
           </form>
           @endcan
           @can('mahasiswa')
-          <a href="/tugas/{{ $kelas->id }}/upload" class="bg-warning text-ligt rounded p-2 text-decoration-none">Upload Tugas</a>
+          <a href="/tugas/{{ $kelas->id }}/upload" class="badge bg-warning text-ligt rounded p-2 text-decoration-none">Upload Tugas</a>
           @endcan
         </td>
       </tr>
