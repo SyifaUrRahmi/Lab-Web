@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nomor 3</title>
+		<script>
+			let str = prompt("Masukkan Apapun Terserah Anda", "t=E+r 5-eR'@?h,");
+			let apalah = {};
+			console.log(str);
+			for (let i = 0; i < str.length; i++) {
+				let karakter = str[i];
+				if (karakter == " ") {
+					karakter = "spasi";
+				}
+				let temp = apalah[karakter];
+				apalah[karakter] = temp ? temp + 1 : 1;
+			}
+			for (karakter in apalah) {
+				console.log(karakter + " = " + apalah[karakter]);
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

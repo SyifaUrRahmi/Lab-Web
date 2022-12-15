@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>H071211046_Putri Aulia Nur Salsabila</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<audio autoplay controls loop hidden>
+			<source src="assets/audio/opening.mp3" type="audio/mpeg" class="center" />
+			<source src="assets/audio/opening.mp3" type="audio/wav" class="center" />
+		</audio>
+		<!-- NAVBAR -->
+		<div class="navigation-bar" style="margin-right: 0px;">
+			<nav
+				class="navbar navbar-expand-lg navbar-light fixed-top"
+				id="navigation-bar"
+				style="margin-right: 0px;"
+			>
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img src="assets/images/logo.png" width="200px" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"><img src=""/></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 0px; justify-content: hidden;">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="#"><div class="menu">Home</div></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><div class="menu">About</div></a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									<span class="menu">Movie</span>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li>
+										<a class="dropdown-item" href="#"
+											>The Chronicles of Narnia: The Lion, the Witch and the
+											Wardrobe (2005)</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#"
+											>The Chronicles of Narnia: Prince Caspian (2008)</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<form class="d-flex">
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Search"
+							/>
+							<button class="btn btn-outline-success" type="submit" style="background-color: #e6d2aa;color: white; border-color: white;">
+								Search
+							</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div
+			id="carouselExampleIndicators"
+			class="carousel slide"
+			data-bs-ride="true"
+		>
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="assets/gif/peter gif.gif" class="d-block w-100" alt="..." />
+				</div>
+				<div class="carousel-item">
+					<img src="assets/gif/susan gif.gif" class="d-block w-100" alt="..." />
+				</div>
+				<div class="carousel-item">
+					<img
+						src="assets/gif/edmund gif.gif" class="d-block w-100" alt="..." />
+				</div>
+			</div>
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<div class="description text-center" style="background-color: #605951;">
+			<h4 class="filmreview">Film Review</h4>
+			<div class="row">
+				<div class="col">
+					The story begins with Peter Pevensie (William Moseley), Suzan Pevensie
+					(Anna Popplewell), Edmund Pevensie (Skandar Keynes) and Lucy Pevensie
+					(Georgie Henley) who had to be evacuated to professor Diggory Kirkel's
+					house which is located in a remote area. One day while they were
+					playing hide and seek, Lucy found an old cupboard and entered it. Lucy
+					was surprised when she was already in a country called Narnia. The
+					country is connected to the cupboard at Professor Kirkel's house. Lucy
+					who met Mr. tumnus and heard a story about a white magician named
+					Jadis who controlled and cursed Narnia, then told the story to the
+					other 3 brothers. <br /><br />
+					Of course, none of his brothers believed that. But one of them,
+					Edmund, deliberately followed Lucy into the country in secret without
+					the other brothers knowing. Until finally Lucy brought her 3 sisters
+					into the country and saw the house of mr. Messy tumnus. At that time
+					they continued their journey and met a pair of beavers who invited
+					them to stop by their house. But unfortunately Edmund disappeared he
+					met Jadis (white witch) to collect sweets, when Edmund followed Lucy
+					(remember...) he met the white wizard ( Jadis ) and Jadis promised him
+					to make him king and give him sweets. <br><br>
+				</div>
+				<div class="col">
+					But it was just a hoax from Jadis because there is a prophecy in
+					Narnia which states that "two sons of Adam and two daughters of Eve
+					will come who will free Narnia from the long winter and defeat Jadis."
+					Of course you already know what Jadis means? Yes, he wants to kill the
+					children of Adam and Eve so that his power is not invincible.
+					<br /><br />
+					Then the beaver suggested that the three of them go to Aslan as ruler
+					of Narnia for help. On their way, they encountered many obstacles
+					caused by Jadis's men. When meeting with Aslan the problem is over,
+					Edmund returns with his brother. But one night Lucy and Suzan found
+					Aslan walking alone, they followed him and were FOUND. Aslan told them
+					to leave him. Lucy and Suzan agreed but still followed Aslan silently.
+					They saw Aslan going to the stone table to meet Jadis and his troops
+					then he was killed. <br /><br />
+					if you want to know the continuation of the story you can directly
+					watch "The Chronicles of Narnia: The Lion, the Witch and the
+					Wardrobe".
+				</div>
+			</div>
+			<div class="skill">
+				<h1 class="title2">Informations</h1>
+				<div class="partskill">
+					<div class="container text-center">
+						<div class="row">
+							<div class="col-md-3">
+								<button type="button" class="btn" style="background-color:#9e9a98;">
+									Narnia Movie
+								</button>
+								<ul style="text-align: left">
+									<li>
+										The Chronicles of Narnia: The Lion, the Witch and the
+										Wardrobe (2005)
+									</li>
+									<li>The Chronicles of Narnia: Prince Caspian (2008)</li>
+									<li>
+										The Chronicles of Narnia: The Voyage of the Dawn Treader
+										(2010)
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-3">
+								<button type="button" class="btn" style="background-color:#9e9a98;">
+									Narnia eBooks
+								</button>
+								<ul style="text-align: left">
+									<li>The Last Battle</li>
+									<li>The Magician's Nephew</li>
+									<li>The Silver Chair</li>
+									<li>The Voyage of the Dawn Treader</li>
+								</ul>
+							</div>
+							<div class="col-md-3">
+								<button type="button" class="btn" style="background-color:#9e9a98;">
+									Narnia Rack Paperbacks
+								</button>
+								<ul style="text-align: left">
+									<li>The Horse and His Boy</li>
+									<li>El sobrino del mago</li>
+									<li>El leon, la bruja y el ropero</li>
+									<li>El principe Caspian</li>
+								</ul>
+							</div>
+							<div class="col-md-3">
+								<button type="button" class="btn" style="background-color:#9e9a98;">
+									Narnia Audio Books
+								</button>
+								<ul style="text-align: left">
+									<li>The Lion, the Witch and the Wardrobe CD</li>
+									<li>The Silver Chair CD</li>
+									<li>The Horse and His Boy CD</li>
+									<li>Voyage of the Dawn Treader CD</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<h2 class="title2">Main Character Narnia</h2>
+			</div>
+			<div class="row row-cols-1 row-cols-2 g-1" style="margin-right: 0px">
+				<div class="colom">
+					<div class="card">
+						<img
+							src="assets/images/Peter.jpg"
+							class="card-img-top"
+							alt="Peter images"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Peter Pevensie</h5>
+							<p class="card-text">
+								He was the eldest of the Pevensie children. He first appeared in
+								"The Lion, the Witch and the Wardrobe". He is known as King
+								(Supreme) Peter the Great.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="colom">
+					<div class="card">
+						<img
+							src="assets/images/Susan.jpg"
+							class="card-img-top"
+							alt="Susan images"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Susan Pevensie</h5>
+							<p class="card-text">
+								He was the second of the Pevensie children. He first appeared in
+								"The Lion, the Witch and the Wardrobe". She is known as the
+								Gentle Queen Susan.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-2 g-1">
+				<div class="colom">
+					<div class="card">
+						<img
+							src="assets/images/Edmund.jpg"
+							class="card-img-top"
+							alt="Edmund images"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Edmund Pevensie</h5>
+							<p class="card-text">
+								In The Lion, the Witch and the Wardrobe, he betrays his brothers
+								to the White Witch under his influence, but as the story
+								progresses he admits his guilt. He is redeemed by Aslan's
+								intervention and joins the fight against the sorceress.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="colom">
+					<div class="card">
+						<img
+							src="assets/images/Lucy.jpg"
+							class="card-img-top"
+							alt="Lucy images"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Lucy Pevensie</h5>
+							<p class="card-text">
+								He first appeared in "The Lion, the Witch and the Wardrobe". Of
+								her brothers and sisters, she is the closest to Aslan and
+								perhaps the one who believes the most in the existence of the
+								Narnian world. She is known as the Courageous Queen Lucy.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ALERT -->
+		<div id="others" style="background-color: #dbc8ac;"></div>
+		<div class="alert alert-dark" role="alert" style="background-color: #dbc8ac; margin-bottom: 0px;">
+			For more informations, <a href="https://www.narniaweb.com/" class="alert-link"> click this!</a>
+		</div>
+
+		<!-- FOOTER AND FORM -->
+<div style="background-color: #dddad9; padding-top: 20px; padding-bottom: 20px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <h2>Critics and Suggestions</h2>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Critics and Suggestions</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="background-color: #786552;">Submit</button>
+      </form>
+        </div>
+      <div class="col-2" style="padding-top:60px;">
+        <ul>
+          Genre <br>
+          Created by <br><br>
+          Director by <br><br>
+          Original release <br>
+        </ul>
+      </div>
+      <div class="col-3" style="padding-top:60px;">
+        : Spy fiction<br>
+        : C. S. Lewis<br>
+        : Michael Apted<br>
+          Andrew Adamson<br>
+        : 9 December 2001 -
+        present<br>
+      </div>
+    </div>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			for (i = 1; i < 100; i--) {
+				var nama = prompt("masukan nama anda :").trim();
+
+				if (nama.length == 0 || nama == " ") {
+					alert("masukan nama anda terlebih dahulu  bang");
+				} else if (nama.length < 3) {
+					alert("nama anda terlalu pendek");
+				} else {
+					for (i21 = 1; i21 < 100; i21--) {
+						var pertanyaan1 = prompt(
+							"Sudah mengumpulkan Tugas Praktikum? YES atau NO "
+						);
+						pertanyaan1 = pertanyaan1.toLowerCase();
+
+						if (pertanyaan1 == "yes") {
+							for (i2 = 1; i2 < 100; i2--) {
+								var pertanyaan2 = prompt("Ikut asistensi?yes atau no :");
+								pertanyaan2 = pertanyaan2.toLowerCase();
+								if (pertanyaan2 == "yes") {
+									for (i3 = 1; i3 < 100; i3--) {
+										var pertanyaan3 = prompt(
+											"sudah berapa kali asistensi 1 atau 2 ? :"
+										);
+										pertanyaan3 = pertanyaan3.toLowerCase();
+										if (pertanyaan3 == 1) {
+											alert("asistensi sekali lagi " + nama);
+											i2 = 120;
+											i = 200;
+											i3 = 120;
+											i21 = 120;
+										} else if (pertanyaan3 == 2) {
+											alert("kamu hebat " + nama);
+											i2 = 120;
+											i21 = 120;
+											i = 200;
+											i3 = 120;
+										} else {
+											alert("Masukkan input yang benar yaitu 1 atau 2.");
+										}
+									}
+								} else if (pertanyaan2 == "no") {
+									alert("asistensi dulu " + nama);
+									i2 = 120;
+									i21 = 120;
+									i = 200;
+								} else {
+									alert("masukan input dengan benar yes atau no");
+								}
+							}
+						} else if (pertanyaan1 == "no") {
+							alert("jangan lupa mengerjakan tugas praktikum nya " + nama);
+							i = 200;
+							i21 = 200;
+						} else {
+							alert("masukan input dengan benar yes atau no");
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

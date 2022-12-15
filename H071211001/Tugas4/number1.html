@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Indah Kurnia Ilahi - H071211001</title>
+	</head>
+	<body>
+		<script>
+			var nama = prompt("Masukkan Nama Anda");
+			var opsi = prompt(
+				"Apakah anda telah mengerjakan tugas praktikum? YES or NO"
+			);
+			if (opsi.toLowerCase() == "yes") {
+				var a = prompt(
+					"Apakah Anda sudah mengikuti asistensi? YES or NO"
+				).toLowerCase();
+				if (a == "yes") {
+					var as = prompt("Sudah asistensi berapa kali? 1 atau 2");
+					if (as == "1") {
+						alert("Masih harus asistensi sekali lagi ya," + nama);
+					} else if (as == "2") {
+						alert("Good job!!," + nama);
+					} else {
+						alert("Masukkan input yang benar, yaitu 1 atau 2");
+					}
+				} else if (a == "no") {
+					alert("Jangan lupa ikut asistensi ya," + nama);
+				} else {
+					var as = prompt("Masukkan input yang benar, yaitu YES atau NO");
+				}
+			} else if (opsi.toLowerCase() == "no") {
+				alert("Jangan lupa dikerjakan tugas praktikumya ya");
+			} else {
+				alert("Masukkan input yang benar, yaitu YES atau NO");
+			}
+		</script>
+	</body>
+</html>

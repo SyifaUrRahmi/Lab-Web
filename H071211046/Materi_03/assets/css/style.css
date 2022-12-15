@@ -1,0 +1,155 @@
+* {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	padding: 0;
+}
+
+#navigation-bar {
+	padding: 0px;
+}
+.container-fluid {
+	padding: 0px;
+	background-color: #e6d2aa;
+	justify-content: hidden;
+	margin-right: 0px;
+}
+.container-fluid .navbar-brand {
+	padding: 0px;
+}
+.container-fluid > img {
+	background: transparent;
+	animation: bounce;
+	animation-duration: 2s;
+}
+#navbarDropdown {
+	margin-top: 10px;
+}
+.nav-item .nav-link .menu {
+	margin-top: 10px;
+	font-size: 23px;
+}
+.nav-item .nav-link:hover {
+	color: black;
+	background-color: white;
+}
+.navbar-brand {
+	display: flex;
+	flex-direction: row;
+	margin-left: 30px;
+	background: transparent;
+}
+.navbar-nav > li > a {
+	color: white;
+}
+
+#narnia {
+	display: flex;
+	background-position: center;
+	background-size: contain;
+	justify-content: center;
+	background-repeat: no-repeat;
+}
+#narnia > img {
+	padding-top: 100px;
+	background: transparent;
+	animation: tada;
+	animation-duration: 2s;
+}
+
+.title {
+	margin: auto;
+	padding-top: 150px;
+	height: 100px;
+	text-align: center;
+	color: white;
+	font-size: 4em;
+	text-shadow: 0 0 5px black;
+}
+form {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+button {
+	color: white;
+}
+
+span {
+	background: transparent;
+}
+
+.row {
+	padding-top: 0;
+	font-size: 15px;
+}
+.col {
+	background-color: #605951;
+	color: white;
+	text-align: justify;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding-top: 15px;
+}
+*/ .colom > h4 {
+	background-color: #605951;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	text-shadow: 0 0 5px black;
+	font-size: 3.5em;
+}
+.filmreview {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	text-align: center;
+	font-size: 3em;
+	background: transparent;
+	color: white;
+	padding: 0;
+	margin: 0;
+	text-shadow: 0 0 5px black;
+}
+.skill > h1 {
+	background-color: #dbc8ac;
+}
+.partskill {
+	background-color: #dbc8ac;
+}
+.title2 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	text-align: center;
+	font-size: 3em;
+	background: transparent;
+	color: white;
+	padding: 0;
+	margin: 0;
+	text-shadow: 0 0 5px black;
+	background-color: #9e9a98;
+}
+.colom {
+	margin: 0px;
+	background-color: #9e9a98;
+	padding: 30px 30px;
+}
+.card {
+	animation: fadeInUpBig;
+	animation-duration: 2s;
+	background-color: #605951;
+}
+.card > img {
+	object-fit: cover;
+}
+.card-body {
+	color: white;
+}
+
+.card-title {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.card-text {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: 15px;
+	text-align: justify;
+}
+.others {
+	background-color: #786552;
+}
