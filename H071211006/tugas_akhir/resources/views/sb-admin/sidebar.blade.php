@@ -53,21 +53,6 @@
           </li>
       @endrole
 
-      <!-- Nav Item - Utilities Collapse Menu -->
-      {{-- <li class="nav-item @yield('pengaturan-active')">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pengaturan" aria-expanded="true" aria-controls="pengaturan">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Pengaturan</span>
-        </a>
-        <div id="pengaturan" class="collapse @yield('pengaturan')" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item @yield('logo')" href="/logo">Logo</a>
-            <a class="collapse-item @yield('footer')" href="/footer">Footer</a>
-            <a class="collapse-item @yield('tentang')" href="tentang">Tentang Kami</a>
-          </div>
-        </div>
-      </li> --}}
-
        <!-- Divider -->
       <hr class="sidebar-divider">
 

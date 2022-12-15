@@ -20,17 +20,10 @@ class UserSeeder extends Seeder
             'email_verified_at' => now(),
             'password' => bcrypt('password')
         ])->assignRole('admin');
-      
-        User::create([
-            'name' => 'Kitten Dust',
-            'email' => 'member@gmail.com',
-            'email_verified_at' => now(),
-            'password' => bcrypt('password')
-        ])->assignRole('penulis');
 
         User::create([
             'name' => 'Prince Hussein',
-            'email' => 'member2@gmail.com',
+            'email' => 'member@gmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('password')
         ])->assignRole('penulis');
