@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap");
+
+/* splash screen   */
+@keyframes splash {
+	0% {
+		height: 120%;
+	}
+
+	100% {
+		height: 0;
+		z-index: -1;
+	}
+}
+@keyframes hallo {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes spin {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes spinover {
+	0% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+div.splash1 {
+	color: white;
+	margin-top: -100px;
+	display: flex;
+	position: fixed;
+	z-index: 100000000;
+	height: 120%;
+	width: 100%;
+	background-color: #000000;
+	animation: splash 2s ease 1 alternate forwards;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	animation-delay: 3s;
+}
+
+.splash1 ul {
+	display: flex;
+	list-style: none;
+	color: #fff;
+	font-size: 5vmax;
+	font-weight: bold;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* spin */
+.spin .btn1 {
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+.spin {
+	margin-top: 13vmax;
+	color: white;
+	animation: spin 0.2s ease infinite alternate forwards;
+	animation: spinover 3s ease 1 alternate forwards;
+}
+
+/* spin */
+.splash1 ul li {
+	position: absolute;
+	opacity: 0;
+	text-transform: uppercase;
+}
+div.splash1 ul li:nth-child(1) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 0.25s;
+}
+div.splash1 ul li:nth-child(2) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 0.5s;
+}
+div.splash1 ul li:nth-child(3) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 0.75s;
+}
+div.splash1 ul li:nth-child(4) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 1s;
+}
+div.splash1 ul li:nth-child(5) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 1.25s;
+}
+div.splash1 ul li:nth-child(6) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 1.5s;
+}
+div.splash1 ul li:nth-child(7) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 1.75s;
+}
+div.splash1 ul li:nth-child(8) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 2s;
+}
+div.splash1 ul li:nth-child(9) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 2.25s;
+}
+div.splash1 ul li:nth-child(10) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 2.5s;
+}
+div.splash1 ul li:nth-child(11) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 2.75s;
+}
+div.splash1 ul li:nth-child(12) {
+	animation: hallo 0.3s ease 1 alternate forwards;
+	animation-delay: 3s;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: #1a3caa;
+	overflow-x: hidden;
+}
+.navbar {
+	font-size: 12px;
+	line-height: 14px;
+	font-family: "IM Fell English", serif;
+	font-weight: 400;
+}
+
+/* layer3 */
+
+.body3 {
+	background-color: #1a3caa;
+	height: 100vmin;
+}
+.body3 .navbar {
+	background-color: #1a3caa;
+}
+.body3 .jumbotron3 {
+	background-color: #1a3caa;
+}
+.jumbotron3 .container {
+	display: flex;
+}
+.body3 .jumbotron3 .c2 {
+	display: flex;
+	margin: auto;
+	width: 35%;
+
+	margin: auto;
+	margin-right: -5%;
+	transition: 2s;
+	margin-top: 23%;
+}
+.body3 .jumbotron3 .c3 {
+	width: 20%;
+	display: flex;
+	margin: auto;
+	margin-top: 17%;
+	transition: 2s;
+	margin-left: -5%;
+}
+.body3 input {
+	-moz-osx-cursor: pointer;
+	-moz-osx-opacity: 1;
+	-moz-osx-position: absolute;
+	-moz-osx-width: 800vmax;
+	-moz-osx-top: 0;
+	-moz-osx-left: 0;
+	-moz-osx-bottom: 0;
+	-moz-osx-right: 0;
+	cursor: pointer;
+	opacity: 1;
+	position: absolute;
+	width: 800vmax;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/* text dalam kotak */
+.kontent3 {
+	position: absolute;
+	margin: 24% 15%;
+}
+.kontent3 h1 {
+	font-size: 7vmax;
+	color: #1a3caa;
+	text-shadow: 0 0 2px rgb(255, 255, 255);
+	transition: 2s;
+	font-family: "IM Fell English", serif;
+	font-weight: bold;
+	z-index: 1;
+	text-transform: uppercase;
+}
+.kontent3 p {
+	color: white;
+	font-size: 1.2em;
+	opacity: 0;
+	width: 90%;
+	font-family: "IM Fell English", serif;
+	text-align: justify;
+	transition: 2s;
+}
+/* animasi ketika di click */
+.body3 input:checked ~ img.c2 {
+	-moz-osx-transform: translateX(-110%);
+	transform: translateX(-110%);
+}
+.body3 input:checked ~ img.c3 {
+	-moz-osx-transform: translateX(110%);
+	transform: translateX(110%);
+}
+.body3 input:checked ~ .kontent3 h1 {
+	-moz-osx-margin-top: -30%;
+	margin-top: -30%;
+}
+.body3 input:checked ~ .kontent3 p {
+	-moz-osx-opacity: 1;
+	opacity: 1;
+}
+.body3 input:checked ~ .kontent3 i {
+	-moz-osx-opacity: 1;
+	opacity: 1;
+}
+
+/* untuk logo */
+.medsos {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2em;
+}
+.medsos i {
+	font-size: 3em;
+	color: white;
+	opacity: 0;
+	transition: 1s;
+}
+.medsos a i:hover {
+	color: rgb(77, 77, 77);
+}
+
+.footer {
+	background-image: url(../images/fotter.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100vmax;
+	height: 100vmin;
+}
+
+/* responsif manual kareana ada beberapa element yang susah diatur pakai margin di boostrap  */
+@media screen and (max-width: 767px) {
+	input {
+		display: none;
+	}
+	.jumbotron3 {
+		margin-top: 20vmin;
+	}
+	.jumbotron3 h1 {
+		margin: 0 0;
+		padding: 0 0;
+		margin-left: -6vmax;
+		text-transform: capitalize;
+		font-size: 5vmax;
+	}
+	.jumbotron3 p.text3 {
+		font-size: 1.5vmax;
+		opacity: 1;
+		margin: 0;
+		padding: 0;
+		margin-left: -5vmax;
+		width: 26vmax;
+	}
+	.medsos {
+		margin-left: 3vmax;
+		margin-top: 30vmin;
+	}
+	.kontent3 i {
+		opacity: 1;
+
+		padding: 1.3vmax;
+		font-size: 5vmax;
+		color: #1a3caa;
+		-webkit-text-stroke: 1px rgb(255, 255, 255);
+	}
+	.jumbotron3 img.c3 {
+		padding-left: 1vmax;
+	}
+	.footer {
+		position: absolute;
+		top: 150vmin;
+		left: -16vmax;
+		background-image: url(../images/fotter.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 80vmax;
+		height: 400px;
+	}
+}

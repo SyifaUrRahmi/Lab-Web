@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	background-image: url(/assets/image/bg\ blackjack.png);
+	background-size: cover;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+h1 {
+	font-size: 60px;
+	padding-top: 75px;
+	padding-bottom: 55px;
+}
+
+#jack {
+	color: rgb(212, 133, 97);
+}
+
+#message-el {
+	font-size: 35px;
+	padding-bottom: 25px;
+}
+
+#message-el2 {
+	font-size: 20px;
+	padding-top: 25px;
+}
+
+#cards-el {
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+
+#sum-el {
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+
+button {
+	background-color: rgb(212, 133, 97);
+	color: white;
+	width: 150px;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 15px;
+	border: none;
+	margin: 5px auto;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.bet {
+	font-size: 18px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#takeCard {
+	background-color: white;
+	color: rgb(212, 133, 97);
+}
+
+#bet-el {
+	font-size: 20px;
+	border-radius: 10px;
+	width: 400px;
+	text-align: center;
+}

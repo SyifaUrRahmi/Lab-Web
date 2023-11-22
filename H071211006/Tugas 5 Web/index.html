@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BLACKJACK</title>
+		<link rel="stylesheet" href="/assets/style/style.css" />
+	</head>
+	<body>
+		<div>
+			<h1>Black<span id="jack">Jack</span></h1>
+			<p id="message-el">Want to play a round?</p>
+			<div>
+				<p id="cards-el">Your Cards:</p>
+				<p id="sum-el">Sum:</p>
+			</div>
+			<div class="button">
+				<button id="btnstart" onclick="bet()" type="submit">START GAME</button>
+				<button id="takeCard" onclick="takeCard()" type="submit">
+					TAKE CARD
+				</button>
+			</div>
+			<p id="message-el2"></p>
+			<div class="bet">
+				<p>Your Money : $<span id="money-el">5000</span></p>
+				<br />
+				<input type="number" id="bet-el" placeholder="Set Your Bet!" />
+			</div>
+		</div>
+		<div class="reset">
+			<button id="resetmoney" onclick="resetMoney()">RESET MONEY</button>
+		</div>
+		<script src="/assets/script/script.js"></script>
+	</body>
+</html>

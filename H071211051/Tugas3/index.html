@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chase Atlantic</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/style/style.css" />
+	</head>
+	<body>
+		<header>
+			<!-- navbar -->
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"
+						><img
+							src="assets/image/logo.png"
+							alt=""
+							width="210px"
+							height="50px"
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbar"
+						aria-controls="navbar"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbar">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									aria-current="page"
+									href="#carouselExampleIndicators"
+									>HOME</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									href="https://chaseatlantic.veeps.com/"
+									target="_blank"
+									>VEEPS</a
+								>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									ALL
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li>
+										<a class="dropdown-item" href="#album-gallery"
+											>Albums & Single</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#events">Events & More</a>
+									</li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="#footer">About</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item"></li>
+						</ul>
+						<form class="d-flex">
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button
+								class="btn btn-outline"
+								type="submit"
+								style="color: #ffffff"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-search"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+									/>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Carousel -->
+			<div
+				id="carouselExampleIndicators"
+				class="carousel slide"
+				data-bs-ride="carousel"
+				d-flex
+			>
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							src="assets/image/carousel1.jpg"
+							class="d-block w-100"
+							alt="..."
+						/>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="assets/image/carousel2.jpg"
+							class="d-block w-100"
+							alt="..."
+						/>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="assets/image/carousel3.jpg"
+							class="d-block w-100"
+							alt="..."
+						/>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</header>
+
+		<main>
+			<!-- Description -->
+			<div class="container" style="padding-top: 70px">
+				<h2>CHASE ATLANTIC</h2>
+				<div class="row gx-5">
+					<div class="col col-6">
+						Chase Atlantic is an Australian alternative R&B band and production
+						trio from Cairns, Queensland, formed in 2014. The group consists of
+						three members: Christian Anthony, Clinton Cave and Mitchel Cave.
+						Chase Atlantic has released seven EPs and three albums.
+					</div>
+					<div class="col col-6">
+						Chase Atlantic has a unique style of music, which, according to the
+						band, is "conjured up dark alternative pop punctuated by rock and
+						R&B." Throughout their four years of producing music, their music
+						style has changed from an alternative/pop sound to a more
+						alternative/R&B sound.
+					</div>
+				</div>
+				<div class="row gx-5">
+					<div class="col col-6">
+						The trio first released music under the name Chase Atlantic when
+						Clinton Cave recruited Mitchel and Christian to assist record a
+						university project. Chase Atlantic officially released the EP
+						Dalliance on 26 May 2014. Their early sound was often described as
+						pop rock and Pop punk.In February 2015, the band released their
+						second EP, Nostalgia. Their song "Friends" was featured in several
+						Tumblr edits.[10] The song was certified Silver by the British
+						Phonographic Industry (BPI) in 2022. Later in 2015, the band caught
+						the eye of Benji and Joel Madden, and they signed the group to their
+						management company, MDDN, in early 2016.
+					</div>
+					<div class="col col-6">
+						The group spent January to April 2019 in Los Angeles, working on
+						their second album. In April, they announced the Phases Tour: North
+						America for the summer of 2019, in support of their second album,
+						Phases, and set the release date for 28 June 2019. The album was
+						preceded by three singles, "Her", "Stuckinmybrain", and "Love Is
+						(Not) Easy", which were released on 10 May, 24 May, and 7 June 2019,
+						respectively. In 2020, they began work on their third studio album.
+						In January 2021, the group announced their third studio album,
+						Beauty in Death, would be released on 5 March 2021. On May 2, 2022,
+						the group announced the release of a deluxe edition of Beauty in
+						Death.
+					</div>
+				</div>
+			</div>
+
+			<!-- Skill List -->
+			<div class="container my-5" id="events" style="padding-top: 70px">
+				<h2>EVENTS & MORE</h2>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2" id="skill-col">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<button
+									type="button"
+									class="btn position-relative w-100"
+									style="color: #ffffff"
+								>
+									Tour Tickets
+									<span
+										class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+									>
+										4
+										<span class="visually-hidden">tour</span>
+									</span>
+								</button>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://www.ticketmaster.com.au/event/13005CE4C9A76733?clickId=xo5xquSq4xyIWDazwI2Ae1AzUkDQX3ylq3cA2Y0&irgwc=1&utm_source=219208-Bandsintown&utm_medium=affiliate&utm_campaign=219208&ircid=7566"
+									target="_blank"
+								>
+									12/09 - Docklands, Australia</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://premier.ticketek.com.au/shows/show.aspx?sh=CHASATLA22"
+									target="_blank"
+									>12/15 - Sydney, Australia</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://www.ticketmaster.co.nz/event/24005CD5C7D0436B?clickId=xo5xquSq4xyIWDazwI2Ae1AzUkDQXyWxq3cA2Y0&irgwc=1&utm_source=219208-Bandsintown&utm_medium=affiliate&utm_campaign=219208"
+									target="_blank"
+									>12/21 - Auckland, New Zealand</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://www.ticketmaster.co.uk/chase-atlantic-london-01-11-2023/event/1F005CCDE2FA516E?irgwc=1&utm_source=1234554-Songkick&utm_medium=affiliate&utm_campaign=1234554&awtrc=&clickId=wHWyhHUafxyITQCWPAUhD043UkDw3sTJ2zsHRs0&camefrom=CFC_BUYAT_1234554&ircid=7559&irgwc=1&utm_source=219208-Bandsintown&utm_medium=affiliate&utm_campaign=219208&awtrc=&clickId=xo5xquSq4xyIWDazwI2Ae1AzUkDQXU0xq3cA2Y0&camefrom=CFC_BUYAT_219208&ircid=7559"
+									target="_blank"
+									>11/01 - London, UK</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<button
+									type="button"
+									class="btn position-relative w-100"
+									style="color: #ffffff"
+								>
+									Merchandise
+									<span
+										class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+									>
+										4
+										<span class="visually-hidden">merchandise</span>
+									</span>
+								</button>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://chaseatlantic.com/products/face-tour-hooded-sweatshirt?variant=41935867216065"
+									target="_blank"
+									>Face Tour Hooded</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://chaseatlantic.com/products/blur-tour-t-shirt?variant=41935838052545"
+									target="_blank"
+									>Blur Tour T-Shirt</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://chaseatlantic.com/products/copy-of-cold-nights-tour-trucker-hat"
+									target="_blank"
+									>Cold Nights Tour Hat</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://chaseatlantic.com/products/cold-nights-tour-poster"
+									target="_blank"
+									>Cold Night Tour Poster</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<button
+									type="button"
+									class="btn position-relative w-100"
+									style="color: #ffffff"
+								>
+									Albums
+									<span
+										class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+									>
+										4
+										<span class="visually-hidden">albums</span>
+									</span>
+								</button>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://beautyindeathc3.com/products/chase-atlantic-beauty-in-death-cassette/"
+									target="_blank"
+									>BEAUTY IN DEATH (CASSETTE)</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://beautyindeathc3.com/products/chase-atlantic-beauty-in-death-cd/"
+									target="_blank"
+									>BEAUTY IN DEATH (CD)</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://beautyindeathc3.com/products/beauty-in-death/"
+									target="_blank"
+									>BEAUTY IN DEATH (ALBUM)</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a
+									href="https://beautyindeathc3.com/products/beauty-in-death-deluxe-edition/"
+									target="_blank"
+									>DELUXE EDITION ALBUM</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<button
+									type="button"
+									class="btn position-relative w-100"
+									style="color: #ffffff"
+								>
+									New Release
+									<span
+										class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+									>
+										4
+										<span class="visually-hidden">music video</span>
+									</span>
+								</button>
+							</li>
+							<li class="list-group-item">
+								<a href="https://youtu.be/wzvB90f1zhM" target="_blank"
+									>SLIDE - CHASE ATLANTIC</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a href="https://youtu.be/DwPtnj9NV64" target="_blank"
+									>ESCORT - CHASE ATLANTIC</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a href="https://youtu.be/9KTh5R3fNgU" target="_blank"
+									>OHMAMI - CHASE ATLANTIC</a
+								>
+							</li>
+							<li class="list-group-item">
+								<a href="https://youtu.be/KanUmwWDsV0" target="_blank"
+									>EMPTY - CHASE ATLANTIC</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Gallery -->
+			<div class="container" id="album-gallery" style="padding-top: 70px">
+				<h2>ALBUMS & SINGLE</h2>
+				<div class="row" id="gallery-row">
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<div class="card w-100">
+							<img
+								src="assets/image/album1.jpg"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Chase Atlantic</h5>
+								<p class="card-text">2017 - Album</p>
+								<a
+									href="https://youtube.com/playlist?list=OLAK5uy_kYiyh5RXPlk5GNAqTT3EUdUr4gnUyNjYE"
+									target="_blank"
+									class="btn btn-light"
+									style="color: #ffffff"
+									>Listen Now</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<div class="card w-100">
+							<img
+								src="assets/image/album2.jpg"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Paradise EP</h5>
+								<p class="card-text">2016 - EP</p>
+								<a
+									href="https://youtube.com/playlist?list=OLAK5uy_k4-6kwlvlO6kVq1xYvWMvqowvDcg0lL2c"
+									target="_blank"
+									class="btn btn-light"
+									style="color: #ffffff"
+									>Listen Now</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<div class="card w-100">
+							<img
+								src="assets/image/album3.jpg"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">PHASES</h5>
+								<p class="card-text">2019 - Album</p>
+								<a
+									href="https://youtube.com/playlist?list=OLAK5uy_mGq4K6Zq_HwvFozhlhQzreLPXl0jO1kWo"
+									target="_blank"
+									class="btn btn-light"
+									style="color: #ffffff"
+									>Listen Now</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<div class="card w-100">
+							<img
+								src="assets/image/album4.jpg"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">BEAUTY IN DEATH</h5>
+								<p class="card-text">2021 - Album</p>
+								<a
+									href="https://youtube.com/playlist?list=OLAK5uy_mURrW68Uz1wjQiYSxW2de7r-ZG5P9CgWE"
+									target="_blank"
+									class="btn btn-light"
+									style="color: #ffffff"
+									>Listen Now</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row" id="gallery-row">
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<div class="card w-100">
+							<img
+								src="assets/image/album5.jpg"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">DON'T TRY THIS</h5>
+								<p class="card-text">2019 - EP</p>
+								<a
+									href="https://youtube.com/playlist?list=OLAK5uy_lLghVJbMUtvpQ-QDN5mCLcN9WlGd7Yrm8"
+									target="_blank"
+									class="btn btn-light"
+									style="color: #ffffff"
+									>Listen Now</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<div class="card w-100">
+							<img
+								src="assets/image/album6.jpg"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">BEAUTY IN DEATH</h5>
+								<p class="card-text">2022 - Album (Deluxe Edition)</p>
+								<a
+									href="https://open.spotify.com/album/4tb9KRJe8FNjYIRbvtGTG5?si=c90IRYcVT82dkI-jYjvUsQ"
+									target="_blank"
+									class="btn btn-light"
+									style="color: #ffffff"
+									>Listen Now</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<div class="card w-100">
+							<img
+								src="assets/image/album7.jpg"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Part One</h5>
+								<p class="card-text">2017 - Single</p>
+								<a
+									href="https://youtube.com/playlist?list=OLAK5uy_kOhxZJmu14hn8tCliKIFz6-p6D4YKOV3g"
+									target="_blank"
+									class="btn btn-light"
+									style="color: #ffffff"
+									>Listen Now</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 my-2">
+						<div class="card w-100">
+							<img
+								src="assets/image/album8.jpg"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">ESCORT</h5>
+								<p class="card-text">2021 - Single</p>
+								<a
+									href="https://youtu.be/DwPtnj9NV64"
+									class="btn btn-light"
+									style="color: #ffffff"
+									target="_blank"
+									>Listen Now</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Tops Songs -->
+			<div class="container mt-5 align-items-center">
+				<h2>TOP SONGS</h2>
+				<iframe
+					style="border-radius: 12px"
+					src="https://open.spotify.com/embed/artist/7cYEt1pqMgXJdq00hAwVpT?utm_source=generator&theme=0"
+					width="100%"
+					height="380"
+					frameborder="0"
+					allowfullscreen=""
+					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+					loading="lazy"
+				></iframe>
+			</div>
+		</main>
+
+		<!-- Alerts -->
+		<footer style="padding-top: 70px">
+			<div class="card" id="footer">
+				<div
+					class="alert d-flex align-items-center justify-content-between"
+					role="alert"
+				>
+					<div>Get connected with us on social networks:</div>
+					<div style="align-items: right">
+						<div class="d-flex flex-row-reverse">
+							<div class="p-2">
+								<a
+									href="https://twitter.com/ChaseAtlantic?s=20&t=Id1I0xNCa23PXwN5Dyi_jA"
+									target="_blank"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-twitter"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+										/></svg
+								></a>
+							</div>
+							<div class="p-2">
+								<a
+									href="https://open.spotify.com/artist/7cYEt1pqMgXJdq00hAwVpT?si=tT01Fa0YQFmFzAROotff5w"
+									target="_blank"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-spotify"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+										/></svg
+								></a>
+							</div>
+							<div class="p-2">
+								<a
+									href="https://www.youtube.com/channel/UCpvCJWgUNwZArGtJ00kDS1A"
+									target="_blank"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-youtube"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+										/></svg
+								></a>
+							</div>
+							<div class="p-2">
+								<a
+									href="https://www.instagram.com/chaseatlantic/"
+									target="_blank"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-instagram"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+										/></svg
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="container">
+						<div class="row" style="text-align: left">
+							<div class="col col-6 align-items-center">
+								<h5><b>Contact</b></h5>
+								<div class="mb-3">
+									<label for="exampleFormControlInput1" class="form-label"
+										>Email address</label
+									>
+									<input
+										type="email"
+										class="form-control"
+										id="exampleFormControlInput1"
+										placeholder="name@example.com"
+									/>
+								</div>
+								<div class="mb-3">
+									<label for="exampleFormControlTextarea1" class="form-label"
+										>Type here</label
+									>
+									<textarea
+										class="form-control"
+										id="exampleFormControlTextarea1"
+										rows="3"
+									></textarea>
+									<button
+										type="submit"
+										class="btn btn-dark btn-outline-light mt-3"
+									>
+										Submit
+									</button>
+								</div>
+							</div>
+							<div class="col col-6" style="text-align: right">
+							</div>
+						</div>
+						<h6 style="margin-top: 10px; text-align: center"><b>2022 - Chase Atlantic</b></h6>
+								<p style="text-align: center">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-c-circle"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
+										/>
+									</svg>
+									2022 - Febi Fiantika
+								</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

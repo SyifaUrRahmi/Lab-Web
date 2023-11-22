@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			var kata = prompt("Masukkan Kalimat...");
+			var hurufs = kata.split("");
+			var count = {};
+
+			for (var i = 0; i < hurufs.length; i++) {
+				if (count[hurufs[i]] == undefined) {
+					count[hurufs[i]] = 0;
+				}
+				count[hurufs[i]]++;
+			}
+
+			for (var i in count) {
+				if (i == " ") {
+					console.log("Spasi = " + count[i]);
+				} else {
+					console.log(i + " = " + count[i]);
+				}
+			}
+			console.log(count);
+		</script>
+	</head>
+	<body></body>
+</html>
